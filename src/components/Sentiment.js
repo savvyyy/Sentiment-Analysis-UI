@@ -39,7 +39,10 @@ export default function Sentiment(props) {
             <CustomEmoji polarity={props.data.sentiment} />
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            <b>Score: </b>{props.data.score}
+            {props.data.sentiment}
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            <b>Score: </b>{props.data.average}
           </Typography>
         </CardContent>
       </Card>

@@ -114,11 +114,11 @@ export default function FullWidthTabs(props) {
   }
 
   const getAspectAnalysis = _ => {
-    return axios.get('./../data/aspect.json')
+    return axios.get('http://127.0.0.1:5000/absa?hashtag='+data.text)
   }
 
   const getIntentAnalysis = _ => {
-    return axios.get('./../data/intent.json')
+    return axios.get('http://127.0.0.1:5000/intent?hashtag='+data.text)
   } 
 
   const getGraphData = _ => {
