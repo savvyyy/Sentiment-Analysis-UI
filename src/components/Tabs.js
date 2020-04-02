@@ -49,6 +49,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function FullWidthTabs(props) {
   
   const { data } = props;
@@ -124,6 +126,16 @@ export default function FullWidthTabs(props) {
   const getGraphData = _ => {
     return axios.get('./../data/graph.json')
   } 
+
+  useEffect(() => {
+    getSentimentAnalysis().then( (response) => {
+      let {data} = response
+      setSentiment(data)
+      setLoading(false)
+    }).catch((error) => {
+      alert(error)
+    })
+  }, []);
 
   return (
     <div>
