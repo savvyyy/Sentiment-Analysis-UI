@@ -27,6 +27,7 @@ const useStyles = makeStyles({
 });
 
 export default function Sentiment(props) {
+  
   const classes = useStyles();
   if(props.loading){
     return <Loader />

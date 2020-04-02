@@ -5,11 +5,13 @@ import {
 import TextField from '../components/TextField';
 import moment from 'moment';
 import Loader from './LoaderComponent'
+import axios from 'axios'
 
 export default (props) => {
 
   const [data, setGraphData] = useState([]);
   const [vsData, setVsData] = useState([]);
+  const [loading, setLoading] = useState(false)
   const originalData = props.data;
 
   useEffect(() => {
@@ -21,12 +23,22 @@ export default (props) => {
     setGraphData(tData);
   }, [props.data])
 
+  const getGraphData = (data) => {
+    console.log('data', data)
+    setLoading(true)
+    return axios.get('http://127.0.0.1:5000/graph?hashtag='+data.text)
+  }
  
   const searchTweet = (props, data) => {
-    let mergedData = mergeTwoSources(originalData, vsDatas);
-    console.error("merge", mergedData);
-    setGraphData(mergedData);
-    setVsData(vsDatas);
+    getGraphData(props).then( (response) => {
+      let {data} = response
+      let mergedData = mergeTwoSources(originalData, data);
+      setGraphData(mergedData);
+      setVsData(vsDatas);
+      setLoading(false)
+      }).catch((error) => {
+      alert(error)
+      })
   }
   const mergeTwoSources = (source1, source2)=> {
     let mergeData = [];
@@ -87,7 +99,7 @@ export default (props) => {
     },
   ];
 
-  if(props.loading){
+  if(props.loading || loading){
     return <Loader />
   }
   else{

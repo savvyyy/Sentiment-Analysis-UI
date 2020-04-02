@@ -124,7 +124,7 @@ export default function FullWidthTabs(props) {
   } 
 
   const getGraphData = _ => {
-    return axios.get('./../data/graph.json')
+    return axios.get('http://127.0.0.1:5000/graph?hashtag='+data.text)
   } 
 
   useEffect(() => {
@@ -163,13 +163,13 @@ export default function FullWidthTabs(props) {
           <Sentiment data={sentiment} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <AspectTweetList data={aspectTweets}/>
+          <AspectTweetList data={aspectTweets} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          <IntentTweetList data={intentTweets}/>
+          <IntentTweetList data={intentTweets} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          <LineGraph data = {graphData}/>
+          <LineGraph data = {graphData} loading={loading}/>
         </TabPanel>
       </SwipeableViews>
     </div>
