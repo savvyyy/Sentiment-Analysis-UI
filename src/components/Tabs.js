@@ -61,6 +61,7 @@ export default function FullWidthTabs(props) {
   const [sentiment, setSentiment] = useState({});
   const [aspectTweets, setAspectTweet] = useState([]);
   const [intentTweets, setIntentTweet] = useState([]);
+  const [graphData, setGraphData] = useState([]);
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -82,6 +83,14 @@ export default function FullWidthTabs(props) {
           alert(error)
         })
         break;
+      case 3:
+          getGraphData().then( (response) => {
+            let {data} = response
+            setGraphData(data)
+          }).catch((error) => {
+            alert(error)
+          })
+          break;
       default:
         getSentimentAnalysis().then( (response) => {
           let {data} = response
@@ -110,22 +119,7 @@ export default function FullWidthTabs(props) {
   } 
 
   const getGraphData = _ => {
-    
-    const data = [
-      {
-        date: '2013-03-24', polarity: 4000,
-      },
-      {
-        date: '2013-03-25', polarity: 5000,
-      },
-      {
-        date: '2013-03-26', polarity: 2099,
-      },
-      {
-        date: '2013-03-27', polarity: 900,
-      }
-    ];
-    return data;
+    return axios.get('./../data/graph.json')
   } 
 
   return (
