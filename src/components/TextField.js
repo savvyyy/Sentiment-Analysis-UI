@@ -79,6 +79,14 @@ export default function TextField(props) {
   const searchTweet = _ => {
     props.textSearch({text, source})
   }
+
+  const preventSubmit = (event) => {
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+    }
+  }
+
   return (
     <Paper component="form" className={classes.root}>
       
@@ -87,7 +95,8 @@ export default function TextField(props) {
         placeholder={props.placeholder || "Search Tweets"}
         inputProps={{ 'aria-label': 'search tweets' }}
         onChange={handleChangeSearch}
-        onSubmit={ (e) => e.preventDefault()}
+        onKeyDown={preventSubmit}
+        onKeyPress={preventSubmit}
       />
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />
