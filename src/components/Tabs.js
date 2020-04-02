@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import AspectTweetList from './AspectTweetList'
 import IntentTweetList from './IntentTweetList'
+import LineGraph from './LineGraph';
 import Sentiment from './Sentiment'
 import axios from 'axios'
 
@@ -56,23 +57,29 @@ export default function FullWidthTabs(props) {
   const [sentiment, setSentiment] = useState({});
   const [aspectTweets, setAspectTweet] = useState([]);
   const [intentTweets, setIntentTweet] = useState([]);
+  const [graphData, setGraphData] = useState([]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    // switch (newValue) {
-    //   case 1:
-    //     let aspects = getAspectAnalysis();
-    //     setAspectTweet(aspects)
-    //     break;
-    //   case 2:
-    //     let intents = getIntentAnalysis();
-    //     setIntentTweet(intents)
-    //     break;
-    //   default:
-    //     let sentiment = getSentimentAnalysis();
-    //     setSentiment(sentiment)
-    //     break;
-    // }
+    console.error("newVaue", newValue);
+    switch (newValue) {
+      case 0:
+        let sentiment = getSentimentAnalysis();
+        setSentiment(sentiment)
+        break;
+      case 1:
+        let aspects = getAspectAnalysis();
+        setAspectTweet(aspects)
+        break;
+      case 2:
+        let intents = getIntentAnalysis();
+        setIntentTweet(intents)
+        break;
+      case 3:
+        let graphData = getGraphData();
+        setGraphData(graphData)
+        break;
+    }
   };
 
   const handleChangeIndex = (index) => {
@@ -94,6 +101,25 @@ export default function FullWidthTabs(props) {
     return [];
   } 
 
+  const getGraphData = _ => {
+    // let {data} = axios.get('https://www.google.com/')
+    const data = [
+      {
+        date: '2013-03-24', polarity: 4000,
+      },
+      {
+        date: '2013-03-25', polarity: 5000,
+      },
+      {
+        date: '2013-03-26', polarity: 2099,
+      },
+      {
+        date: '2013-03-27', polarity: 900,
+      }
+    ];
+    return data;
+  } 
+
   return (
     <div> 
       <p>{data.text}</p>
@@ -109,6 +135,7 @@ export default function FullWidthTabs(props) {
           <Tab label="Sentiment Analysis" {...a11yProps(0)} />
           <Tab label="Aspect Analysis" {...a11yProps(1)} />
           <Tab label="Intent Analysis" {...a11yProps(2)} />
+          <Tab label="Graph" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -124,6 +151,9 @@ export default function FullWidthTabs(props) {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <IntentTweetList />
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <LineGraph data = {graphData}/>
         </TabPanel>
       </SwipeableViews>
     </div>
