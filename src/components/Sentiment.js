@@ -1,9 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CustomEmoji from './CustomEmoji'
 
@@ -28,26 +26,18 @@ const useStyles = makeStyles({
   }
 });
 
-export default function Sentiment() {
+export default function Sentiment(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.textAlign}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
-          <CustomEmoji polarity={1} />
+          <CustomEmoji polarity={props.data.sentiment} />
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
-          <b>Score: </b>2.8
+          <b>Score: </b>{props.data.score}
         </Typography>
-        {/* <Typography variant="body2">
-          <CustomEmoji polarity={1} />
-          <CustomEmoji polarity={2} />
-          <CustomEmoji polarity={3} />
-          <CustomEmoji polarity={4} />
-          <CustomEmoji polarity={5} />
-        </Typography> */}
       </CardContent>
     </Card>
   );

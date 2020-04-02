@@ -1,0 +1,394 @@
+[
+    {
+        "id": 0,
+        "tweet": "RT @wevegan: #WednesdayThoughts\nIf you're still eating animals and you still think it's a \"personal choice\",\nthink again. \n\nBreed animals,…",
+        "tweetclean": "RT  #WednesdayThoughts\nIf you're still eating animals and you still think it's a \"personal choice\",\nthink again. \n\nBreed animals,…",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "animals",
+            "choice",
+            "animals"
+        ]
+    },
+    {
+        "id": 1,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 2,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 3,
+        "tweet": "RT @HonChrisAzubogu: #INFOGRAPHICS: How you can get the coronavirus #CODVID19\nI want our people to know about CoronaVIrus and to have every…",
+        "tweetclean": "RT  #INFOGRAPHICS: How you can get the coronavirus #CODVID19\nI want our people to know about CoronaVIrus and to have every…",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "@HonChrisAzubogu",
+            "INFOGRAPHICS",
+            "coronavirus",
+            "#",
+            "CODVID19",
+            "people"
+        ]
+    },
+    {
+        "id": 4,
+        "tweet": "#Plant #Disease Primarily Spreads Via Roadsides \nhttps://t.co/JL3THDwDNJ https://t.co/Yo3DyTvG8a",
+        "tweetclean": "#Plant #Disease Primarily Spreads Via Roadsides \n ",
+        "Polarity": 0.4,
+        "Sentiment": "Positive",
+        "Aspects": [
+            "Plant",
+            "#"
+        ]
+    },
+    {
+        "id": 5,
+        "tweet": "RT @o_franco_aleman: My #love is as a fever, longing still\nFor that which longer nurseth the #disease;\nFeeding on that which doth preserve…",
+        "tweetclean": "RT  My #love is as a fever, longing still\nFor that which longer nurseth the #disease;\nFeeding on that which doth preserve…",
+        "Polarity": 0.5,
+        "Sentiment": "Positive",
+        "Aspects": [
+            "love",
+            "fever",
+            "disease"
+        ]
+    },
+    {
+        "id": 6,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 7,
+        "tweet": "An advice for people with chronic conditions , Cancer and HIV during #COVID19 pandemic.\n\n#Coronavirus #covid-19… https://t.co/RTLPpiINV1",
+        "tweetclean": "An advice for people with chronic conditions , Cancer and HIV during #COVID19 pandemic.\n\n#Coronavirus #covid-19… ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "advice",
+            "people",
+            "conditions",
+            "COVID19",
+            "pandemic"
+        ]
+    },
+    {
+        "id": 8,
+        "tweet": "RT @TsimprisP: A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "tweetclean": "RT  A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "Polarity": -0.03333333333333333,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "@TsimprisP",
+            "lecture",
+            "professor",
+            "military",
+            "#",
+            "doctors",
+            "Years",
+            "subtitles",
+            "death"
+        ]
+    },
+    {
+        "id": 9,
+        "tweet": "New Study of The Coronavirus ‘Spike’ Protein Could Help Explain Its Immense Spread\n\nWhen a new #disease comes out o… https://t.co/eTvSXP3lEH",
+        "tweetclean": "New Study of The Coronavirus ‘Spike’ Protein Could Help Explain Its Immense Spread\n\nWhen a new #disease comes out o… ",
+        "Polarity": 0.0909090909090909,
+        "Sentiment": "Positive",
+        "Aspects": [
+            "Protein",
+            "disease",
+            "o"
+        ]
+    },
+    {
+        "id": 10,
+        "tweet": "Utilize the maximum time this quarantine by sharpening your skills.\n.\n#unschooling #cleanhands #india #disease… https://t.co/BvzkG8O4PU",
+        "tweetclean": "Utilize the maximum time this quarantine by sharpening your skills.\n.\n#unschooling #cleanhands #india #disease… ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "time",
+            "quarantine",
+            "skills",
+            "cleanhands",
+            "india",
+            "disease"
+        ]
+    },
+    {
+        "id": 11,
+        "tweet": "💜🦋 Fighting for the #lupus cure starts with learning more about the #disease Raise your awareness 🙌💜📚💜 #educate you… https://t.co/J2GLK6zt5b",
+        "tweetclean": "💜🦋 Fighting for the #lupus cure starts with learning more about the #disease Raise your awareness 🙌💜📚💜 #educate you… ",
+        "Polarity": 0.5,
+        "Sentiment": "Positive",
+        "Aspects": [
+            "#",
+            "lupus",
+            "starts",
+            "disease",
+            "awareness"
+        ]
+    },
+    {
+        "id": 12,
+        "tweet": "Will surely #increase \n\n#Corona #disease\n\nIf we don't #cease\n\nTo mingle with #ease\n\nNever socialize #please\n\nTo pre… https://t.co/GzMPDThBUs",
+        "tweetclean": "Will surely #increase \n\n#Corona #disease\n\nIf we don't #cease\n\nTo mingle with #ease\n\nNever socialize #please\n\nTo pre… ",
+        "Polarity": 0.5,
+        "Sentiment": "Positive",
+        "Aspects": [
+            "Corona",
+            "disease",
+            "ease"
+        ]
+    },
+    {
+        "id": 13,
+        "tweet": "RT @wevegan: #WednesdayThoughts\nIf you're still eating animals and you still think it's a \"personal choice\",\nthink again. \n\nBreed animals,…",
+        "tweetclean": "RT  #WednesdayThoughts\nIf you're still eating animals and you still think it's a \"personal choice\",\nthink again. \n\nBreed animals,…",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "animals",
+            "choice",
+            "animals"
+        ]
+    },
+    {
+        "id": 14,
+        "tweet": "Dreamstime #photograph #stockphotography #isolation #woman #covid2019 #virus #pandemic #stayhome #besafe… https://t.co/hXgJ4eB3Tz",
+        "tweetclean": "Dreamstime #photograph #stockphotography #isolation #woman #covid2019 #virus #pandemic #stayhome #besafe… ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "Dreamstime",
+            "photograph",
+            "stockphotography",
+            "#",
+            "isolation",
+            "woman",
+            "virus",
+            "pandemic"
+        ]
+    },
+    {
+        "id": 15,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 16,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 17,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 18,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 19,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 20,
+        "tweet": "RT @ennajones1: #Afraid of #Corona no problem we are providing #Webinars and #Video #presentations. Share your Knowledge on #Corona #Virus…",
+        "tweetclean": "RT  #Afraid of #Corona no problem we are providing #Webinars and #Video #presentations. Share your Knowledge on #Corona #Virus…",
+        "Polarity": -0.6,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "problem",
+            "Webinars",
+            "Video",
+            "#",
+            "presentations",
+            "Knowledge",
+            "Virus"
+        ]
+    },
+    {
+        "id": 21,
+        "tweet": "RT @ennajones1: Participants, eminent pioneers of #Infectious #Disease, #professors, #analysts, #students all through the globe. Explore #P…",
+        "tweetclean": "RT  Participants, eminent pioneers of #Infectious #Disease, #professors, #analysts, #students all through the globe. Explore #P…",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "Participants",
+            "pioneers",
+            "#",
+            "#",
+            "professors",
+            "#",
+            "analysts",
+            "students",
+            "globe",
+            "#",
+            "P"
+        ]
+    },
+    {
+        "id": 22,
+        "tweet": "Prevent #disease, don’t just treat it when it happens! https://t.co/r5Q1sUEz8d",
+        "tweetclean": "Prevent #disease, don’t just treat it when it happens! ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "disease"
+        ]
+    },
+    {
+        "id": 23,
+        "tweet": "#COVID #COVIDIOTS #COVID19Pandemic #CoronaAlert #coronavirus #Coronafighters #coronavirusindia… https://t.co/YxZHVzHsJ2",
+        "tweetclean": "#COVID #COVIDIOTS #COVID19Pandemic #CoronaAlert #coronavirus #Coronafighters #coronavirusindia… ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "COVID",
+            "#",
+            "#",
+            "coronavirus",
+            "Coronafighters",
+            "coronavirusindia"
+        ]
+    },
+    {
+        "id": 24,
+        "tweet": "Consideration of #Ketogenic Metabolic Therapy as a Complementary or Alternative Approach for Managing Breast… https://t.co/hZRlJWErur",
+        "tweetclean": "Consideration of #Ketogenic Metabolic Therapy as a Complementary or Alternative Approach for Managing Breast… ",
+        "Polarity": 0.0,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "Consideration"
+        ]
+    },
+    {
+        "id": 25,
+        "tweet": "RT @TsimprisP: A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "tweetclean": "RT  A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "Polarity": -0.03333333333333333,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "@TsimprisP",
+            "lecture",
+            "professor",
+            "military",
+            "#",
+            "doctors",
+            "Years",
+            "subtitles",
+            "death"
+        ]
+    },
+    {
+        "id": 26,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 27,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    },
+    {
+        "id": 28,
+        "tweet": "RT @TsimprisP: A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "tweetclean": "RT  A lecture of  #Greek #Thinker, professor Liantinis. To #military #doctors. Years ago. There are #English #subtitles . #death…",
+        "Polarity": -0.03333333333333333,
+        "Sentiment": "Neutral",
+        "Aspects": [
+            "@TsimprisP",
+            "lecture",
+            "professor",
+            "military",
+            "#",
+            "doctors",
+            "Years",
+            "subtitles",
+            "death"
+        ]
+    },
+    {
+        "id": 29,
+        "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "tweetclean": "RT  How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
+        "Polarity": -0.37916666666666665,
+        "Sentiment": "Negative",
+        "Aspects": [
+            "Cow",
+            "disease"
+        ]
+    }
+]

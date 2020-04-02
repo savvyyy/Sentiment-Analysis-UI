@@ -2,24 +2,24 @@ import React from 'react'
 import { Emoji } from 'emoji-mart'
 
 const CustomEmoji = (props) => {
-    const polarity = props.polarity || 1;
+    const polarity = props.polarity || 'Very positive';
     const emojiSize = 48;
     const emojiSkin = 3;
     let polarityComponent;
     switch (polarity) {
-        case 1:
+        case 'Very positive':
             polarityComponent = <Emoji emoji={{ id: 'grin', skin: emojiSkin }} size={emojiSize} />  
             break;
-        case 2:
+        case 'Positive':
             polarityComponent = <Emoji emoji={{ id: 'slightly_smiling_face', skin: emojiSkin }} size={emojiSize} />
             break;
-        case 3:
+        case 'Neutral':
             polarityComponent = <Emoji emoji={{ id: 'neutral_face', skin: emojiSkin }} size={emojiSize} />
             break;
-        case 4:
+        case 'Negative':
             polarityComponent = <Emoji emoji={{ id: 'white_frowning_face', skin: emojiSkin }} size={emojiSize} />
             break;
-        case 5:
+        case 'Very negative':
             polarityComponent = <Emoji emoji={{ id: 'rage', skin: emojiSkin }} size={emojiSize} />
             break;
     }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -11,6 +11,9 @@ import AspectTweetList from './AspectTweetList'
 import IntentTweetList from './IntentTweetList'
 import Sentiment from './Sentiment'
 import axios from 'axios'
+// import sentimentData from './../data/sentiment.json'
+// import aspectData from './../data/sentiment.json'
+// import sentimentData from './../data/sentiment.json'
 
 function TabPanel(props) {
   const { children, value, index } = props;
@@ -49,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function FullWidthTabs(props) {
+  
   const { data } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -56,23 +60,36 @@ export default function FullWidthTabs(props) {
   const [sentiment, setSentiment] = useState({});
   const [aspectTweets, setAspectTweet] = useState([]);
   const [intentTweets, setIntentTweet] = useState([]);
-
+  
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    // switch (newValue) {
-    //   case 1:
-    //     let aspects = getAspectAnalysis();
-    //     setAspectTweet(aspects)
-    //     break;
-    //   case 2:
-    //     let intents = getIntentAnalysis();
-    //     setIntentTweet(intents)
-    //     break;
-    //   default:
-    //     let sentiment = getSentimentAnalysis();
-    //     setSentiment(sentiment)
-    //     break;
-    // }
+    switch (newValue) {
+      case 1:
+        getAspectAnalysis().then( (response) => {
+          let {data} = response
+          setAspectTweet(data) 
+        }).catch((error) => {
+          alert(error)
+        })
+        
+        break;
+      case 2:
+        getIntentAnalysis().then( (response) => {
+          let {data} = response
+          setIntentTweet(data)
+        }).catch((error) => {
+          alert(error)
+        })
+        break;
+      default:
+        getSentimentAnalysis().then( (response) => {
+          let {data} = response
+          setSentiment(data)
+        }).catch((error) => {
+          alert(error)
+        })
+        break;
+    }
   };
 
   const handleChangeIndex = (index) => {
@@ -80,23 +97,42 @@ export default function FullWidthTabs(props) {
   };
 
   const getSentimentAnalysis = _ => {
-    let {data} = axios.get('https://www.google.com/')
-    return [];
+    // axios.get('./../data/sentiment.json').then( (response) => {
+    //   let {data} = response
+    //   return data
+    // }).catch((error) => {
+    //   alert(error)
+    // })
+    return axios.get('./../data/sentiment.json')
   }
 
   const getAspectAnalysis = _ => {
-    let {data} = axios.get('https://www.google.com/')
-    return [];
+    // axios.get('./../data/aspect.json').then( (response) => {
+    //   let {data} = response
+    //   return data
+    // }).catch((error) => {
+    //   alert(error)
+    // })
+    return axios.get('./../data/aspect.json')
   }
 
   const getIntentAnalysis = _ => {
-    let {data} = axios.get('https://www.google.com/')
-    return [];
+    // axios.get('./../data/intent.json').then( (response) => {
+    //   let {data} = response
+    //   return data
+    // }).catch((error) => {
+    //   alert(error)
+    // })
+    return axios.get('./../data/intent.json')
   } 
-
+  // getSentimentAnalysis().then( (response) => {
+  //   let {data} = response
+  //   setSentiment(data)
+  // }).catch((error) => {
+  //   alert(error)
+  // })
   return (
-    <div> 
-      <p>{data.text}</p>
+    <div>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -117,13 +153,13 @@ export default function FullWidthTabs(props) {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Sentiment />
+          <Sentiment data={sentiment}/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <AspectTweetList />
+          <AspectTweetList data={aspectTweets}/>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          <IntentTweetList />
+          <IntentTweetList data={intentTweets}/>
         </TabPanel>
       </SwipeableViews>
     </div>
