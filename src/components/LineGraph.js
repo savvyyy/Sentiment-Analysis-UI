@@ -4,6 +4,7 @@ import {
 } from 'recharts';
 import TextField from '../components/TextField';
 import moment from 'moment';
+import Loader from './LoaderComponent'
 
 export default (props) => {
 
@@ -86,29 +87,34 @@ export default (props) => {
     },
   ];
 
-  return (
-    <React.Fragment>
-      <div className="holder">
-        <TextField placeholder={"vs Tweet"} textSearch={searchTweet} />
-      </div>
-      <LineChart
-        width={700}
-        height={400}
-        data={data}
-        margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="date" />
-        <YAxis />
-        <Tooltip />
-        <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
-        {
-          vsData.length > 0 && 
-          <Line type="monotone" dataKey="source2" stroke="#82ca9d" />
-        }
-      </LineChart>
-    </React.Fragment>
-  );
+  if(props.loading){
+    return <Loader />
+  }
+  else{
+    return (
+      <React.Fragment>
+        <div className="holder">
+          <TextField placeholder={"vs Tweet"} textSearch={searchTweet} />
+        </div>
+        <LineChart
+          width={700}
+          height={400}
+          data={data}
+          margin={{
+            top: 5, right: 30, left: 20, bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
+          {
+            vsData.length > 0 && 
+            <Line type="monotone" dataKey="source2" stroke="#82ca9d" />
+          }
+        </LineChart>
+      </React.Fragment>
+    );
+  }
 }
