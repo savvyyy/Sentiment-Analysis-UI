@@ -68,6 +68,7 @@ export default function FullWidthTabs(props) {
     switch (newValue) {
       case 1:
         getAspectAnalysis().then( (response) => {
+          console.log('response', response)
           let {data} = response
           setAspectTweet(data) 
         }).catch((error) => {
@@ -107,7 +108,7 @@ export default function FullWidthTabs(props) {
   };
 
   const getSentimentAnalysis = _ => {
-    return axios.get('./../data/sentiment.json')
+    return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+data.text)
   }
 
   const getAspectAnalysis = _ => {
