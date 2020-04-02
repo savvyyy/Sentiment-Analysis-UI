@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import AspectTweetList from './AspectTweetList'
 import IntentTweetList from './IntentTweetList'
+import LineGraph from './LineGraph';
 import Sentiment from './Sentiment'
 import axios from 'axios'
 // import sentimentData from './../data/sentiment.json'
@@ -97,40 +98,36 @@ export default function FullWidthTabs(props) {
   };
 
   const getSentimentAnalysis = _ => {
-    // axios.get('./../data/sentiment.json').then( (response) => {
-    //   let {data} = response
-    //   return data
-    // }).catch((error) => {
-    //   alert(error)
-    // })
     return axios.get('./../data/sentiment.json')
   }
 
   const getAspectAnalysis = _ => {
-    // axios.get('./../data/aspect.json').then( (response) => {
-    //   let {data} = response
-    //   return data
-    // }).catch((error) => {
-    //   alert(error)
-    // })
     return axios.get('./../data/aspect.json')
   }
 
   const getIntentAnalysis = _ => {
-    // axios.get('./../data/intent.json').then( (response) => {
-    //   let {data} = response
-    //   return data
-    // }).catch((error) => {
-    //   alert(error)
-    // })
     return axios.get('./../data/intent.json')
   } 
-  // getSentimentAnalysis().then( (response) => {
-  //   let {data} = response
-  //   setSentiment(data)
-  // }).catch((error) => {
-  //   alert(error)
-  // })
+
+  const getGraphData = _ => {
+    
+    const data = [
+      {
+        date: '2013-03-24', polarity: 4000,
+      },
+      {
+        date: '2013-03-25', polarity: 5000,
+      },
+      {
+        date: '2013-03-26', polarity: 2099,
+      },
+      {
+        date: '2013-03-27', polarity: 900,
+      }
+    ];
+    return data;
+  } 
+
   return (
     <div>
       <AppBar position="static" color="default">
@@ -145,6 +142,7 @@ export default function FullWidthTabs(props) {
           <Tab label="Sentiment Analysis" {...a11yProps(0)} />
           <Tab label="Aspect Analysis" {...a11yProps(1)} />
           <Tab label="Intent Analysis" {...a11yProps(2)} />
+          <Tab label="Graph" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -160,6 +158,9 @@ export default function FullWidthTabs(props) {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <IntentTweetList data={intentTweets}/>
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <LineGraph data = {graphData}/>
         </TabPanel>
       </SwipeableViews>
     </div>

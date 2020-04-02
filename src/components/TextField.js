@@ -73,6 +73,7 @@ export default function TextField(props) {
     setSource(event.target.value);
   };
   const handleChangeSearch = (event) => {
+    event.preventDefault;
     setText(event.target.value);
   };
   const searchTweet = _ => {
@@ -83,15 +84,15 @@ export default function TextField(props) {
       
       <InputBase
         className={classes.input}
-        placeholder="Search Tweets"
+        placeholder={props.placeholder || "Search Tweets"}
         inputProps={{ 'aria-label': 'search tweets' }}
         onChange={handleChangeSearch}
       />
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />
       </IconButton>
-      <Divider className={classes.divider} orientation="vertical" />
-      <Select
+      {/* <Divider className={classes.divider} orientation="vertical" /> */}
+      {/* <Select
           labelId="demo-customized-select-label"
           id="demo-customized-select"
           value={source}
@@ -99,8 +100,7 @@ export default function TextField(props) {
           input={<BootstrapInput />}
         >
         <MenuItem value={0}><TwitterIcon color="primary"/></MenuItem>
-        <MenuItem value={1}><FacebookIcon color="primary"/></MenuItem>
-      </Select>
+      </Select> */}
     </Paper>
   );
 }
