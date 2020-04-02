@@ -5,6 +5,7 @@ import AspectTweet from './AspectTweet'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { FixedSizeList } from 'react-window';
+import Loader from './LoaderComponent'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,24 +17,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TweetList(props) {
   const classes = useStyles();
-  return (
-    <Card >
-      <CardContent>
-        {/* <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
-        </FixedSizeList> */}
-        <List>
-          {
-            props.data.map((el) => {
-              return <AspectTweet key={el.id}
-                                  text={el.tweetclean}
-                                  polarity={el.Polarity}
-                                  sentiment={el.Sentiment}
-                                  aspect={el.Aspects} 
-                      /> 
-            })
-          }
-        </List>
-      </CardContent>
-    </Card>
-  );
+  if(props.loading){
+    return <Loader />
+  }
+  else{
+    return (
+      <Card >
+        <CardContent>
+          {/* <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
+          </FixedSizeList> */}
+          <List>
+            {
+              props.data.map((el) => {
+                return <AspectTweet key={el.id}
+                                    text={el.tweetclean}
+                                    polarity={el.Polarity}
+                                    sentiment={el.Sentiment}
+                                    aspect={el.Aspects} 
+                        /> 
+              })
+            }
+          </List>
+        </CardContent>
+      </Card>
+    );
+  }
 }

@@ -87,6 +87,7 @@ export default function TextField(props) {
         placeholder={props.placeholder || "Search Tweets"}
         inputProps={{ 'aria-label': 'search tweets' }}
         onChange={handleChangeSearch}
+        onSubmit={ (e) => e.preventDefault()}
       />
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />

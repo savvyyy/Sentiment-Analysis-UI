@@ -12,9 +12,6 @@ import IntentTweetList from './IntentTweetList'
 import LineGraph from './LineGraph';
 import Sentiment from './Sentiment'
 import axios from 'axios'
-// import sentimentData from './../data/sentiment.json'
-// import aspectData from './../data/sentiment.json'
-// import sentimentData from './../data/sentiment.json'
 
 function TabPanel(props) {
   const { children, value, index } = props;
@@ -62,6 +59,7 @@ export default function FullWidthTabs(props) {
   const [aspectTweets, setAspectTweet] = useState([]);
   const [intentTweets, setIntentTweet] = useState([]);
   const [graphData, setGraphData] = useState([]);
+  const [loading, setLoading] = useState(true)
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -70,6 +68,7 @@ export default function FullWidthTabs(props) {
         getAspectAnalysis().then( (response) => {
           let {data} = response
           setAspectTweet(data) 
+          setLoading(false)
         }).catch((error) => {
           alert(error)
         })
@@ -79,6 +78,7 @@ export default function FullWidthTabs(props) {
         getIntentAnalysis().then( (response) => {
           let {data} = response
           setIntentTweet(data)
+          setLoading(false)
         }).catch((error) => {
           alert(error)
         })
@@ -87,6 +87,7 @@ export default function FullWidthTabs(props) {
           getGraphData().then( (response) => {
             let {data} = response
             setGraphData(data)
+            setLoading(false)
           }).catch((error) => {
             alert(error)
           })
@@ -95,6 +96,7 @@ export default function FullWidthTabs(props) {
         getSentimentAnalysis().then( (response) => {
           let {data} = response
           setSentiment(data)
+          setLoading(false)
         }).catch((error) => {
           alert(error)
         })
@@ -145,7 +147,7 @@ export default function FullWidthTabs(props) {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Sentiment data={sentiment}/>
+          <Sentiment data={sentiment} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           <AspectTweetList data={aspectTweets}/>

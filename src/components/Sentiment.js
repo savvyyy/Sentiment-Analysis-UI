@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CustomEmoji from './CustomEmoji'
-
+import Loader from './LoaderComponent'
 
 const useStyles = makeStyles({
   root: {
@@ -28,17 +28,21 @@ const useStyles = makeStyles({
 
 export default function Sentiment(props) {
   const classes = useStyles();
-
-  return (
-    <Card className={classes.textAlign}>
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          <CustomEmoji polarity={props.data.sentiment} />
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          <b>Score: </b>{props.data.score}
-        </Typography>
-      </CardContent>
-    </Card>
-  );
+  if(props.loading){
+    return <Loader />
+  }
+  else{
+    return (
+      <Card className={classes.textAlign}>
+        <CardContent>
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
+            <CustomEmoji polarity={props.data.sentiment} />
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            <b>Score: </b>{props.data.score}
+          </Typography>
+        </CardContent>
+      </Card>
+    );
+  }
 }

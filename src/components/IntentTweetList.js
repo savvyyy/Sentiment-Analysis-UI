@@ -4,6 +4,7 @@ import List from '@material-ui/core/List';
 import IntentTweet from './IntentTweet'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Loader from './LoaderComponent'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,24 +16,29 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TweetList(props) {
   const classes = useStyles();
-  return (
-    <Card >
-      <CardContent>
-        {/* <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
-        </FixedSizeList> */}
-        <List>
-          {
-            props.data.map((el) => {
-              let [intent, score] = el.intent.slice(1, length-1).split(',')
-              return <IntentTweet key={el.id}
-                              text={el.tweet}
-                              intent={intent.slice(1, intent.length-1)}
-                              score={score}
-                      /> 
-            })
-          }
-        </List>
-      </CardContent>
-    </Card>
-  );
+  if(props.loading){
+    return <Loader />
+  }
+  else{
+    return (
+      <Card >
+        <CardContent>
+          {/* <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
+          </FixedSizeList> */}
+          <List>
+            {
+              props.data.map((el) => {
+                let [intent, score] = el.intent.slice(1, length-1).split(',')
+                return <IntentTweet key={el.id}
+                                text={el.tweet}
+                                intent={intent.slice(1, intent.length-1)}
+                                score={score}
+                        /> 
+              })
+            }
+          </List>
+        </CardContent>
+      </Card>
+    );
+  }
 }
