@@ -107,10 +107,8 @@ export default (props) => {
   }
 
   const returnText = (props) => {
-  source2Text = props
-
-
-    // setSource2(props);
+    // console.log('errorrrrr', props)
+    source2Text = props
   }
 
   if(props.loading || loading){
@@ -120,7 +118,7 @@ export default (props) => {
     return (
       <React.Fragment>
         <div className="holder">
-          <TextField placeholder={"vs Tweet"} textSearch={searchTweet} returnText={returnText} />
+          <TextField source2Text={source2Text} placeholder={"vs Tweet"} textSearch={searchTweet} returnText={returnText} />
         </div>
         <LineChart
           width={700}

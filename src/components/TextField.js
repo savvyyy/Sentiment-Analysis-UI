@@ -74,6 +74,9 @@ export default function TextField(props) {
   };
   const handleChangeSearch = (event) => {
     event.preventDefault;
+    if(props.returnText) {
+      props.returnText(event.target.value);
+    }
     setText(event.target.value);
   };
   const searchTweet = _ => {
@@ -86,7 +89,7 @@ export default function TextField(props) {
       event.preventDefault();
     }
   }
-
+// console.log('prrrrrr', props)
   return (
     <Paper component="form" className={classes.root}>
       
@@ -97,6 +100,7 @@ export default function TextField(props) {
         onChange={handleChangeSearch}
         onKeyDown={preventSubmit}
         onKeyPress={preventSubmit}
+        defaultValue = {props.source2Text || ''}
       />
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />
