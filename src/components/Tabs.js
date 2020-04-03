@@ -67,8 +67,9 @@ export default function FullWidthTabs(props) {
     setValue(newValue);
     switch (newValue) {
       case 1:
+        setLoading(true)
         getAspectAnalysis().then( (response) => {
-          console.log('response', response)
+          // console.log('response', response)
           let {data} = response
           setAspectTweet(data) 
           setLoading(false)
@@ -78,6 +79,7 @@ export default function FullWidthTabs(props) {
         
         break;
       case 2:
+        setLoading(true)
         getIntentAnalysis().then( (response) => {
           let {data} = response
           setIntentTweet(data)
@@ -87,6 +89,7 @@ export default function FullWidthTabs(props) {
         })
         break;
       case 3:
+        setLoading(true)
           getGraphData().then( (response) => {
             let {data} = response
             setGraphData(data)
@@ -96,6 +99,7 @@ export default function FullWidthTabs(props) {
           })
           break;
       default:
+        setLoading(true)
         getSentimentAnalysis().then( (response) => {
           let {data} = response
           setSentiment(data)
