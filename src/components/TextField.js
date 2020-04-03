@@ -74,9 +74,6 @@ export default function TextField(props) {
   };
   const handleChangeSearch = (event) => {
     event.preventDefault;
-    if(props.returnText) {
-      props.returnText(event.target.value);
-    }
     setText(event.target.value);
   };
   const searchTweet = _ => {
@@ -95,8 +92,8 @@ export default function TextField(props) {
       
       <InputBase
         className={classes.input}
-        placeholder={props.placeholder || "Search Tweets"}
-        inputProps={{ 'aria-label': 'search tweets' }}
+        placeholder={props.placeholder || "Search Hashtags"}
+        inputProps={{ 'aria-label': '' }}
         onChange={handleChangeSearch}
         onKeyDown={preventSubmit}
         onKeyPress={preventSubmit}
