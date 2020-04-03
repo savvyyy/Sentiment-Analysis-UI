@@ -74,6 +74,9 @@ export default function TextField(props) {
   };
   const handleChangeSearch = (event) => {
     event.preventDefault;
+    if(props.returnText) {
+      props.returnText(event.target.value);
+    }
     setText(event.target.value);
   };
   const searchTweet = _ => {

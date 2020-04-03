@@ -169,7 +169,7 @@ export default function FullWidthTabs(props) {
           <IntentTweetList data={intentTweets} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          <LineGraph data = {graphData} loading={loading}/>
+          <LineGraph data = {graphData} loading={false} sourceText = {data.text}/>
         </TabPanel>
       </SwipeableViews>
     </div>

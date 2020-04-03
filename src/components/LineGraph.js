@@ -8,11 +8,36 @@ import Loader from './LoaderComponent'
 import axios from 'axios'
 
 export default (props) => {
-
   const [data, setGraphData] = useState([]);
   const [vsData, setVsData] = useState([]);
   const [loading, setLoading] = useState(false)
   const originalData = props.data;
+  const source1Text = props.sourceText;
+  const [source2Text, setSource2]  = useState('');
+
+  const CustomTooltip = (props) => {
+    return (
+    <div class='container'>
+      {
+        props.payload[0] ?
+          <div class="source">
+            <p><h3><text>{props.payload[0].payload.date}</text></h3></p>
+            <p><h4><b>#{source1Text}</b></h4></p>
+            <p><text>Polarity : {props.payload[0].payload.source1}</text></p>
+          </div>
+        : ""
+      }
+      {
+        props.payload[1] ?
+          <div class="source">
+            <p><h4><b>#{source2Text}</b></h4></p>
+            <p><text>Polarity : {props.payload[1].payload.source2}</text></p>
+          </div>
+        : ""
+      }
+    </div>);
+
+ }
 
   useEffect(() => {
     let tData = [];
@@ -21,24 +46,23 @@ export default (props) => {
       tData.push({'date': item.date, 'source1': item.polarity});
     });
     setGraphData(tData);
-  }, [props.data])
+  }, [props.data]) 
 
   const getGraphData = (data) => {
-    console.log('data', data)
     setLoading(true)
     return axios.get('http://127.0.0.1:5000/graph?hashtag='+data.text)
   }
  
-  const searchTweet = (props, data) => {
-    getGraphData(props).then( (response) => {
+  const searchTweet = (props) => {
+    getGraphData().then( (response) => {
       let {data} = response
       let mergedData = mergeTwoSources(originalData, data);
       setGraphData(mergedData);
-      setVsData(vsDatas);
+      setVsData(data);
       setLoading(false)
-      }).catch((error) => {
+    }).catch((error) => {
       alert(error)
-      })
+    })
   }
   const mergeTwoSources = (source1, source2)=> {
     let mergeData = [];
@@ -80,24 +104,10 @@ export default (props) => {
     }
     return mergeData;
   }
-  
-  const vsDatas = [
-    {
-      date: '2013-03-24', polarity: 2400,
-    },
-    {
-      date: '2013-03-25', polarity: 2000,
-    },
-    {
-      date: '2013-03-26', polarity: 1500,
-    },
-    {
-      date: '2013-03-27', polarity: 40,
-    },
-    {
-      date: '2013-03-28', polarity: 1000,
-    },
-  ];
+
+  const returnText = (props) => {
+    setSource2(props);
+  }
 
   if(props.loading || loading){
     return <Loader />
@@ -106,7 +116,7 @@ export default (props) => {
     return (
       <React.Fragment>
         <div className="holder">
-          <TextField placeholder={"vs Tweet"} textSearch={searchTweet} />
+          <TextField placeholder={"vs Tweet"} textSearch={searchTweet} returnText={returnText} />
         </div>
         <LineChart
           width={700}
@@ -119,7 +129,7 @@ export default (props) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip/>}/>
           <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
           {
             vsData.length > 0 && 
