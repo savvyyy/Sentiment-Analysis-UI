@@ -132,14 +132,57 @@ export default function FullWidthTabs(props) {
   } 
 
   useEffect(() => {
-    getSentimentAnalysis().then( (response) => {
-      let {data} = response
-      setSentiment(data)
-      setLoading(false)
-    }).catch((error) => {
-      alert(error)
-    })
-  }, []);
+    if(props.data.text == ''){
+      getSentimentAnalysis().then( (response) => {
+        let {data} = response
+        setSentiment(data)
+        setLoading(false)
+      }).catch((error) => {
+        alert(error)
+      })
+    }else{
+      switch (value) {
+        case 1:
+          getAspectAnalysis().then( (response) => {
+            console.log('response', response)
+            let {data} = response
+            setAspectTweet(data) 
+            setLoading(false)
+          }).catch((error) => {
+            alert(error)
+          })
+          
+          break;
+        case 2:
+          getIntentAnalysis().then( (response) => {
+            let {data} = response
+            setIntentTweet(data)
+            setLoading(false)
+          }).catch((error) => {
+            alert(error)
+          })
+          break;
+        case 3:
+            getGraphData().then( (response) => {
+              let {data} = response
+              setGraphData(data)
+              setLoading(false)
+            }).catch((error) => {
+              alert(error)
+            })
+            break;
+        default:
+          getSentimentAnalysis().then( (response) => {
+            let {data} = response
+            setSentiment(data)
+            setLoading(false)
+          }).catch((error) => {
+            alert(error)
+          })
+          break;
+      }
+    }
+  }, [props.data.text]);
 
   return (
     <div>
