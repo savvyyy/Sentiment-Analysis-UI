@@ -65,46 +65,46 @@ export default function FullWidthTabs(props) {
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    switch (newValue) {
-      case 1:
-        getAspectAnalysis().then( (response) => {
-          console.log('response', response)
-          let {data} = response
-          setAspectTweet(data) 
-          setLoading(false)
-        }).catch((error) => {
-          alert(error)
-        })
+    // switch (newValue) {
+    //   case 1:
+    //     getAspectAnalysis().then( (response) => {
+    //       console.log('response', response)
+    //       let {data} = response
+    //       setAspectTweet(data) 
+    //       setLoading(false)
+    //     }).catch((error) => {
+    //       alert(error)
+    //     })
         
-        break;
-      case 2:
-        getIntentAnalysis().then( (response) => {
-          let {data} = response
-          setIntentTweet(data)
-          setLoading(false)
-        }).catch((error) => {
-          alert(error)
-        })
-        break;
-      case 3:
-          getGraphData().then( (response) => {
-            let {data} = response
-            setGraphData(data)
-            setLoading(false)
-          }).catch((error) => {
-            alert(error)
-          })
-          break;
-      default:
-        getSentimentAnalysis().then( (response) => {
-          let {data} = response
-          setSentiment(data)
-          setLoading(false)
-        }).catch((error) => {
-          alert(error)
-        })
-        break;
-    }
+    //     break;
+    //   case 2:
+    //     getIntentAnalysis().then( (response) => {
+    //       let {data} = response
+    //       setIntentTweet(data)
+    //       setLoading(false)
+    //     }).catch((error) => {
+    //       alert(error)
+    //     })
+    //     break;
+    //   case 3:
+    //       getGraphData().then( (response) => {
+    //         let {data} = response
+    //         setGraphData(data)
+    //         setLoading(false)
+    //       }).catch((error) => {
+    //         alert(error)
+    //       })
+    //       break;
+    //   default:
+    //     getSentimentAnalysis().then( (response) => {
+    //       let {data} = response
+    //       setSentiment(data)
+    //       setLoading(false)
+    //     }).catch((error) => {
+    //       alert(error)
+    //     })
+    //     break;
+    // }
   };
 
   const handleChangeIndex = (index) => {
@@ -128,9 +128,39 @@ export default function FullWidthTabs(props) {
   } 
 
   useEffect(() => {
+    console.log('test')
+    // Get Sentiments
     getSentimentAnalysis().then( (response) => {
       let {data} = response
       setSentiment(data)
+      setLoading(false)
+    }).catch((error) => {
+      alert(error)
+    })
+
+    // Get Aspects
+    getAspectAnalysis().then( (response) => {
+      console.log('response', response)
+      let {data} = response
+      setAspectTweet(data) 
+      setLoading(false)
+    }).catch((error) => {
+      alert(error)
+    })
+
+    // Get Intent
+    getIntentAnalysis().then( (response) => {
+      let {data} = response
+      setIntentTweet(data)
+      setLoading(false)
+    }).catch((error) => {
+      alert(error)
+    })
+
+    // Get Project
+    getGraphData().then( (response) => {
+      let {data} = response
+      setGraphData(data)
       setLoading(false)
     }).catch((error) => {
       alert(error)
