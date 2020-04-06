@@ -2,7 +2,6 @@ import React from 'react'
 import { Emoji } from 'emoji-mart'
 
 const CustomEmoji = (props) => {
-    console.log('propsss1', props)
     let polarity = props.polarity || 'Very positive';
     polarity = polarity.toLowerCase()
     const emojiSize = 48;

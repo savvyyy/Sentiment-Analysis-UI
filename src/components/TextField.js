@@ -89,17 +89,18 @@ export default function TextField(props) {
       event.preventDefault();
     }
   }
-
+// console.log('prrrrrr', props)
   return (
     <Paper component="form" className={classes.root}>
       
       <InputBase
         className={classes.input}
-        placeholder={props.placeholder || "Search Tweets"}
-        inputProps={{ 'aria-label': 'search tweets' }}
+        placeholder={props.placeholder || "Search Hashtags"}
+        inputProps={{ 'aria-label': '' }}
         onChange={handleChangeSearch}
         onKeyDown={preventSubmit}
         onKeyPress={preventSubmit}
+        defaultValue = {props.source2Text || ''}
       />
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />

@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Tweet = (props) => {
-  console.log('propsss2', props)
   const classes = useStyles();
   return (<ListItem 
     button

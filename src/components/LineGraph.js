@@ -6,14 +6,15 @@ import TextField from '../components/TextField';
 import moment from 'moment';
 import Loader from './LoaderComponent'
 import axios from 'axios'
-
+  // const [source2Text, setSource2]  = useState('');
+  let  source2Text = '';
 export default (props) => {
   const [data, setGraphData] = useState([]);
   const [vsData, setVsData] = useState([]);
   const [loading, setLoading] = useState(false)
   const originalData = props.data;
   const source1Text = props.sourceText;
-  const [source2Text, setSource2]  = useState('');
+  // const [source2Text, setSource2]  = useState('');
 
   const CustomTooltip = (props) => {
     return (
@@ -46,7 +47,7 @@ export default (props) => {
       tData.push({'date': item.date, 'source1': item.polarity});
     });
     setGraphData(tData);
-  }, [props.data]) 
+  }, [props.data])
 
   const getGraphData = (data) => {
     setLoading(true)
@@ -54,7 +55,7 @@ export default (props) => {
   }
  
   const searchTweet = (props) => {
-    getGraphData().then( (response) => {
+    getGraphData(props).then( (response) => {
       let {data} = response
       let mergedData = mergeTwoSources(originalData, data);
       setGraphData(mergedData);
@@ -74,7 +75,7 @@ export default (props) => {
     while(s1Index < s1Length && s2Index < s2Length) {
       let d1 = moment(source1[s1Index].date).valueOf();
       let d2 = moment(source2[s2Index].date).valueOf();
-      
+     
 
       if(d1 < d2) {
         mergeData.push({'date' : source1[s1Index].date, 'source1': source1[s1Index].polarity, 'source2': s2LastData});
@@ -106,7 +107,8 @@ export default (props) => {
   }
 
   const returnText = (props) => {
-    setSource2(props);
+    // console.log('errorrrrr', props)
+    source2Text = props
   }
 
   if(props.loading || loading){
@@ -116,7 +118,7 @@ export default (props) => {
     return (
       <React.Fragment>
         <div className="holder">
-          <TextField placeholder={"vs Tweet"} textSearch={searchTweet} returnText={returnText} />
+          <TextField source2Text={source2Text} placeholder={"vs Tweet"} textSearch={searchTweet} returnText={returnText} />
         </div>
         <LineChart
           width={700}
@@ -132,7 +134,7 @@ export default (props) => {
           <Tooltip content={<CustomTooltip/>}/>
           <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
           {
-            vsData.length > 0 && 
+            vsData.length > 0 &&
             <Line type="monotone" dataKey="source2" stroke="#82ca9d" />
           }
         </LineChart>
