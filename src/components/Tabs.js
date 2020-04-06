@@ -112,18 +112,22 @@ export default function FullWidthTabs(props) {
   };
 
   const getSentimentAnalysis = _ => {
+    setLoading(true)
     return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+data.text)
   }
 
   const getAspectAnalysis = _ => {
+    setLoading(true)
     return axios.get('http://127.0.0.1:5000/absa?hashtag='+data.text)
   }
 
   const getIntentAnalysis = _ => {
+    setLoading(true)
     return axios.get('http://127.0.0.1:5000/intent?hashtag='+data.text)
   } 
 
   const getGraphData = _ => {
+    setLoading(true)
     return axios.get('http://127.0.0.1:5000/graph?hashtag='+data.text)
   } 
 
