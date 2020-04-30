@@ -1,4 +1,629 @@
 {
     "sentiment": "Neutral",
-    "score": 0
+    "score": 0,
+    "tweets": [
+        {
+            "tweet": "@HerNameIs_Bea's account has been withheld in India in response to a legal demand. Learn more.",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Raza",
+            "created_at": "Mon Apr 27 05:37:01 +0000 2020"
+        },
+        {
+            "tweet": "As we begin this third week in the #Easter season, we invite you to join us in our Evening Prayer on Tuesday, April 28, 2020 via #Facebook Live. #LOH #Prayer at 4:30 p.m.  https://t.co/rLMxl2Uz6D Hope you can join us! Please Share this. TY\n#Prayers in  https://t.co/Vy8tM4y3Pt https://t.co/WHENNB4FyP",
+            "polarity": 0.9328,
+            "sentiment": "Very Positive",
+            "username": "Sisters of the Society Devoted to the Sacred Heart",
+            "created_at": "Mon Apr 27 05:36:42 +0000 2020"
+        },
+        {
+            "tweet": "Hope JioMart would have a different strategies in place for after sales services #jiomart #mukeshambani #facebook #whatsapp #reliance #amazon @JeffBezos #jiomartvsamazon #onlineretailwar #flipkart *intentionally removed associate name https://t.co/aPbcslV7Jq",
+            "polarity": 0.5574,
+            "sentiment": "Very Positive",
+            "username": "Vimal Lazzar",
+            "created_at": "Mon Apr 27 05:35:52 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/McPC08teuk",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "DinfoMall.com™ - Best Online Deals!",
+            "created_at": "Mon Apr 27 05:33:00 +0000 2020"
+        },
+        {
+            "tweet": "My friend sent me this screen shot of facebooks recent update, be safe y’all 🙏🏽 #facebook #privacy https://t.co/0aezMuD7WD",
+            "polarity": 0.7269,
+            "sentiment": "Very Positive",
+            "username": "Bryan",
+            "created_at": "Mon Apr 27 05:32:36 +0000 2020"
+        },
+        {
+            "tweet": "So peeps are concerned about privacy issues witht this Govt virus tracking app ... irony is that they are complaining on #Facebook and @Twitter that have all their details freely and what they had for breakfast this morning.",
+            "polarity": 0.2263,
+            "sentiment": "Positive",
+            "username": "Media Stable",
+            "created_at": "Mon Apr 27 05:32:00 +0000 2020"
+        },
+        {
+            "tweet": "Please take a minute to like our #Facebook page https://t.co/hjm8TqeLJO",
+            "polarity": 0.5859,
+            "sentiment": "Very Positive",
+            "username": "Poole Together",
+            "created_at": "Mon Apr 27 05:30:20 +0000 2020"
+        },
+        {
+            "tweet": "Do you need a hand creating your first content strategy for your company? Want to stay on top of algorithm changes and Facebook features for your clients? This Facebook 101 guide can help you.  https://t.co/9USNj1mK2S  #facebook #marketing via @agorapulse @SonnenbergMedia",
+            "polarity": 0.8611,
+            "sentiment": "Very Positive",
+            "username": "Expedition Creative",
+            "created_at": "Mon Apr 27 05:30:04 +0000 2020"
+        },
+        {
+            "tweet": "WEBINARS - Ways to Grow your Business during #SALockdown\n\nRegister your interest today - admin@heinjonker.com\n\n#business #google #facebook #twitter #linkedin #instagram #websites #email #grow #success #management #webinar #socialmedia https://t.co/iURY8hMACw",
+            "polarity": 0.7717,
+            "sentiment": "Very Positive",
+            "username": "Hein Jonker Media House",
+            "created_at": "Mon Apr 27 05:30:00 +0000 2020"
+        },
+        {
+            "tweet": "Our Ingenuity Shapes Facebook\n\n#Apple under Steve Jobs prided itself on telling people what they should want. \n#Facebook is the opposite. It runs on our ingenuity. https://t.co/BRAvm2UctF",
+            "polarity": 0.0772,
+            "sentiment": "Positive",
+            "username": "Frederic Drzewiecki",
+            "created_at": "Mon Apr 27 05:29:46 +0000 2020"
+        },
+        {
+            "tweet": "🍀Feeling #lucky? And want to win £100 worth of your fave #products 🍀 \n\nTo enter: \n🐝Like and #Follow @throwbackannie\n🐝Tag 3 #babes\n🐝Retweet this #post \n\n😍For a bigger #chance to win - Enter on our #facebook😍\n\n‼️#competition ends - 04/05/2020‼️\n\n#giveaway #gift #free #win https://t.co/nWp3vqZtJb",
+            "polarity": 0.9855,
+            "sentiment": "Very Positive",
+            "username": "rachael sanders",
+            "created_at": "Mon Apr 27 05:28:11 +0000 2020"
+        },
+        {
+            "tweet": "As discussed in my medium post from last week, the commerce layer in @WhatsApp with #JioMart has already launched  in #India ! Curious to see how the product evolves and how well the features are designed as compared to WeChat. #Facebook #jio  https://t.co/Y3jPX7B5Jo",
+            "polarity": 0.636,
+            "sentiment": "Very Positive",
+            "username": "Dhanasree Molugu (谭悦琦)",
+            "created_at": "Mon Apr 27 05:27:42 +0000 2020"
+        },
+        {
+            "tweet": "Follow Us On #Instagram, #Twitter, Like Our #Facebook Page, Subscribe Our #YouTube Channel And Download Our #Public_Live_News App from Play Store..So You Get Our Regular Updates Daily..\n#GoodMorningTwitterWorld #MondayMotivaton #healthy #fitness #butter #cheese #mondaythoughts https://t.co/il520LY3Q8",
+            "polarity": 0.8271,
+            "sentiment": "Very Positive",
+            "username": "PUBLIC LIVE NEWS",
+            "created_at": "Mon Apr 27 05:26:34 +0000 2020"
+        },
+        {
+            "tweet": "77. \"Single is an opportunity to live life on your own terms and not apologize.\"\n#pkphotography #photography #creative\n#india #Odisha #kdp #pmi \n#tiktok #google #Facebook\n#Instagram #Twitter #pages https://t.co/9a1vwvEZA1",
+            "polarity": 0.6602,
+            "sentiment": "Very Positive",
+            "username": "PRAKASH👑KUMAR📸DaZz🇮🇳",
+            "created_at": "Mon Apr 27 05:25:56 +0000 2020"
+        },
+        {
+            "tweet": "Hackers sell 267 million Facebook profiles for RM2,350\nSecure your company, email us at marketing@linkdood.com\nhttps://t.co/biScmlh0Tn\n#cybersecurity #dataprotection #databreach #datacrime #infosec #encryption #security #tech #hacked #leaked #technology #privacy #facebook #hacker",
+            "polarity": -0.0516,
+            "sentiment": "Negative",
+            "username": "Rishi Dwivedi",
+            "created_at": "Mon Apr 27 05:25:54 +0000 2020"
+        },
+        {
+            "tweet": "The company has announced that soon broadcasters can create events for their broadcasts in which they will be able to charge an entry fee.\n-\n@Facebook @facebookapp @FacebookWatch\n#facebook #watch #livestream https://t.co/JH28HBzbGm",
+            "polarity": 0.2732,
+            "sentiment": "Positive",
+            "username": "Gawking Geeks",
+            "created_at": "Mon Apr 27 05:25:50 +0000 2020"
+        },
+        {
+            "tweet": "At a time when print #media is going down under on account of #digital emcroachment, it has been handed a survival kit from DownUnder. An edit. #facebook #google #Australia #content https://t.co/2C9ayiIhF0",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "leomukherjee",
+            "created_at": "Mon Apr 27 05:23:33 +0000 2020"
+        },
+        {
+            "tweet": "Facebook is expanding its \"community help\" feature to reach people affected by the coronavirus pandemic. https://t.co/tUIQpV0cTB \n@EntrepreneurIND  #entrepreneurIndia #Facebook #socialmedia #socialmedianews #update #covid19 #workfromhome #inthistogether",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "Amin Rozani",
+            "created_at": "Mon Apr 27 05:19:49 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/pYbAI6GJPV",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Techie Wiz",
+            "created_at": "Mon Apr 27 05:18:35 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/pYbAI6GJPV",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Indie Game Network",
+            "created_at": "Mon Apr 27 05:17:48 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/pYbAI6GJPV",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Game Android News",
+            "created_at": "Mon Apr 27 05:17:43 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/pYbAI6GJPV",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Indie Dev Retweets",
+            "created_at": "Mon Apr 27 05:17:15 +0000 2020"
+        },
+        {
+            "tweet": "Recent #RelianceJio and Facebook and what it mean for #Facebook.  #Socialcommerce #WhatsApp https://t.co/BHoHMH3WQl",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Meenakshi Tiwari",
+            "created_at": "Mon Apr 27 05:16:39 +0000 2020"
+        },
+        {
+            "tweet": "Was it a rough night on #callofdutymodernwarfare #batteroyale tonight? It sure was!!! No wins tonight but I’ll be grinding for the next win tomorrow night! Catch me live on mixer around 9pm central! #gamer #gamergirl #streamer #mixer #facebook #workforit #thegrind #betteryourself https://t.co/wrQEv2LLU0",
+            "polarity": 0.7917,
+            "sentiment": "Very Positive",
+            "username": "ANPAUS | Youtuber | Enterpreneur | Streamer",
+            "created_at": "Mon Apr 27 05:16:27 +0000 2020"
+        },
+        {
+            "tweet": "Was it a rough night on #callofdutymodernwarfare #batteroyale tonight? It sure was!!! No wins tonight but I’ll be grinding for the next win tomorrow night! Catch me live on mixer around 9pm central! #gamer #gamergirl #streamer #mixer #facebook #workforit #thegrind #betteryourself https://t.co/wrQEv2LLU0",
+            "polarity": 0.7917,
+            "sentiment": "Very Positive",
+            "username": "ASH3R",
+            "created_at": "Mon Apr 27 05:16:25 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/pYbAI6GJPV",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "DinfoMall.com™ - Best Online Deals!",
+            "created_at": "Mon Apr 27 05:16:00 +0000 2020"
+        },
+        {
+            "tweet": "Testing a WhatsApp-backed online store in India\n.\n#whatsapp #onlinestore #India .@WhatsApp .@reliancejio #reliancejio #facebook #etail #ecommerce #ideas #digitalasian\nhttps://t.co/4BDYDUjrnn",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "DigitalAsian",
+            "created_at": "Mon Apr 27 05:13:50 +0000 2020"
+        },
+        {
+            "tweet": "Reliance and Facebook pilot JioMart orders on WhatsApp https://t.co/6DsHcD8kph #reliancejio #eCommerce #Facebook #reliance #WhatsApp #Apps",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Gamer Geek",
+            "created_at": "Mon Apr 27 05:13:28 +0000 2020"
+        },
+        {
+            "tweet": "Well #Facebook (app) is being a dick and not letting me scroll any further than a few pages despite the usual “fixes” like reinstalling, restarting, logging out etc.\n\nAnyone had this before?",
+            "polarity": 0.0772,
+            "sentiment": "Positive",
+            "username": "s t e v e ヽ(゜∇゜)ノ",
+            "created_at": "Mon Apr 27 05:13:28 +0000 2020"
+        },
+        {
+            "tweet": "Telegram is bringing secure group video calls later this year, Digital News | #socialmedia | #hacking | #facebook | #computerhacking https://t.co/t4hMg6neJQ https://t.co/lRb0pfNy14",
+            "polarity": 0.34,
+            "sentiment": "Positive",
+            "username": "NCSbyNCSV",
+            "created_at": "Mon Apr 27 05:13:27 +0000 2020"
+        },
+        {
+            "tweet": "🍀Feeling #lucky? And want to win £100 worth of your fave #products 🍀 \n\nTo enter: \n🐝Like and #Follow @throwbackannie\n🐝Tag 3 #babes\n🐝Retweet this #post \n\n😍For a bigger #chance to win - Enter on our #facebook😍\n\n‼️#competition ends - 04/05/2020‼️\n\n#giveaway #gift #free #win https://t.co/nWp3vqZtJb",
+            "polarity": 0.9855,
+            "sentiment": "Very Positive",
+            "username": "Ruth Harwood",
+            "created_at": "Mon Apr 27 05:13:16 +0000 2020"
+        },
+        {
+            "tweet": "Testing a WhatsApp-backed online store in India\n.\n#whatsapp #onlinestore #India .@WhatsApp .@reliancejio #reliancejio #facebook #etail #ecommerce #ideas #digitalasian\nhttps://t.co/4BDYDUjrnn",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "IdeaIndia",
+            "created_at": "Mon Apr 27 05:13:00 +0000 2020"
+        },
+        {
+            "tweet": "This is the state of Facebook right now. They ban you for talking about 5g but girls are uploading pictures of their vaginas and no one gives a fuck #Facebook #pedogate @Facebook #doublestandards @garethicke #thetruth #wtf https://t.co/mfPoZSIWae",
+            "polarity": -0.9437,
+            "sentiment": "Very Negative",
+            "username": "dannobeats",
+            "created_at": "Mon Apr 27 05:12:57 +0000 2020"
+        },
+        {
+            "tweet": "Make sure to follow us on all of our social media platforms to stay updated. Jazakallah\n\n#community #center #communitycenter #stayupdated #socialmedia #platforms #facebook\n#twitter #youtube #instagram #followall #likeall #subscribe #followus #muslim #islam #dean https://t.co/8sRml8Prx8",
+            "polarity": 0.3182,
+            "sentiment": "Positive",
+            "username": "Madania Community",
+            "created_at": "Mon Apr 27 05:12:31 +0000 2020"
+        },
+        {
+            "tweet": "Jio and Facebook join hands. Social media giant #Facebook acquires a 9.99% stake in Reliance Jio. \n\n#Poorvikamobiles #News #Currentnews #Markzukerberg #Jio #Reliance #Investment #Mukeshambani https://t.co/AQvsnfPKes",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "suresh kumar",
+            "created_at": "Mon Apr 27 05:12:27 +0000 2020"
+        },
+        {
+            "tweet": "Reliance and Facebook pilot JioMart orders on WhatsApp https://t.co/IAODhvTdDn #Apps #Asia #eCommerce #Facebook via @techcrunch https://t.co/2qfSyhFMTr",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Enno",
+            "created_at": "Mon Apr 27 05:12:06 +0000 2020"
+        },
+        {
+            "tweet": "Reliance and Facebook pilot JioMart orders on WhatsApp https://t.co/IAODhvTdDn #Apps #Asia #eCommerce #Facebook via @techcrunch https://t.co/2qfSyhFMTr",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Christophe Langlois 📊 #KCMHomeboundQuiz",
+            "created_at": "Mon Apr 27 05:12:03 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/STHn4jv12n",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Saltydogsbot",
+            "created_at": "Mon Apr 27 05:10:38 +0000 2020"
+        },
+        {
+            "tweet": "Reliance and #Facebook pilot #JioMart orders on #WhatsApp – #TechCrunch https://t.co/7TLhCGcJMa @techcrunch https://t.co/46rT5EyRcz",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Darren Culbreath",
+            "created_at": "Mon Apr 27 05:10:01 +0000 2020"
+        },
+        {
+            "tweet": "The #1 #Sunday Afternoon radio show in the #World returns to the air today! The #LionzDenRadioShow is back at a new time! 4pm-6pm est tune in on #Facebook, #Periscope or #Youtube! Don’t miss it “We Dont Ignore Evil We Seek To Expose it! https://t.co/KJycHlZe6c",
+            "polarity": 0.6802,
+            "sentiment": "Very Positive",
+            "username": "IUIC Portland Camp",
+            "created_at": "Mon Apr 27 05:10:00 +0000 2020"
+        },
+        {
+            "tweet": "The #1 #Sunday Afternoon radio show in the #World returns to the air today! The #LionzDenRadioShow is back at a new time! 4pm-6pm est tune in on #Facebook, #Periscope or #Youtube! Don’t miss it “We Dont Ignore Evil We Seek To Expose it! https://t.co/RtY3j6hEth",
+            "polarity": 0.6802,
+            "sentiment": "Very Positive",
+            "username": "Kingdom Konversation 👑🤴🏿👸🏾💜",
+            "created_at": "Mon Apr 27 05:09:51 +0000 2020"
+        },
+        {
+            "tweet": "In 2016, after the #police shooting of Philando Castile in the Twin Cities, Russian #disinformation used #Facebook to invite demonstrators to a protest at the wrong police department- done by a Russia-linked organization that used Facebook to sow discord. https://t.co/XoN6BKO8Vv",
+            "polarity": -0.7351,
+            "sentiment": "Very Negative",
+            "username": "Jeffrey Boone",
+            "created_at": "Mon Apr 27 05:09:38 +0000 2020"
+        },
+        {
+            "tweet": "Hackers sell 267 million Facebook profiles for RM2,350\nSecure your company, email us at marketing@linkdood.com\nhttps://t.co/biScmlh0Tn\n#cybersecurity #dataprotection #databreach #datacrime #infosec #encryption #security #tech #hacked #leaked #technology #privacy #facebook #hacker",
+            "polarity": -0.0516,
+            "sentiment": "Negative",
+            "username": "DigiMantra Labs",
+            "created_at": "Mon Apr 27 05:08:50 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/STHn4jv12n",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "Project Hyrax (Horror Text Adventure)",
+            "created_at": "Mon Apr 27 05:08:45 +0000 2020"
+        },
+        {
+            "tweet": "#RelianceIndustries Ltd. has begun testing its online shopping portal three days after #Facebook Inc. announced that it will invest $5.7 billion in #digitalpayments  assets controlled by billionaire #MukeshAmbani. https://t.co/05QXjfRSjt",
+            "polarity": 0.1779,
+            "sentiment": "Positive",
+            "username": "The Banking & Finance Post",
+            "created_at": "Mon Apr 27 05:08:00 +0000 2020"
+        },
+        {
+            "tweet": "Learn and grow with @officialividya . We will help you build up Englis. Stay tune and follow us on #facebook #instagram #youtube #twitter #tiktok \n\n#english  #lockdown #ividya #govtjobs #onlinelearning #education #exams #fillintheblank  #studies #competition https://t.co/cpYAH3O49I",
+            "polarity": 0.4019,
+            "sentiment": "Positive",
+            "username": "iVidya",
+            "created_at": "Mon Apr 27 05:07:22 +0000 2020"
+        },
+        {
+            "tweet": "#Reliance and #Facebook pilot JioMart orders on #WhatsApp https://t.co/SXeGuyhCfh https://t.co/DxF9yMv9qA",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Mumin Al Shawaf (I am Hiring)",
+            "created_at": "Mon Apr 27 05:07:02 +0000 2020"
+        },
+        {
+            "tweet": "Fulfill your duty with sincerity and offer your actions to God. Focus on your efforts, results will be granted by the Lord.\n\n#Facebook\n#पालघर \n#एकांतऔषधिहै \n#StayHomeStaySafe \n#घरमेंरहेंस्वस्थरहें \n#BePositive",
+            "polarity": 0.7184,
+            "sentiment": "Very Positive",
+            "username": "Lockdown 2.0",
+            "created_at": "Mon Apr 27 05:06:22 +0000 2020"
+        },
+        {
+            "tweet": "@MJALSHRIKA Asslamu allaikum, sir this #BJP Gov of india using which called #BJP_IT_CELL  #whatsap n #facebook throw this kind of pages n groups, they r spreading hate n lots of indian idiots believes it, and this kind of groups r all over india from small village to smart city's.",
+            "polarity": -0.25,
+            "sentiment": "Negative",
+            "username": "Ayaz GokAk",
+            "created_at": "Mon Apr 27 05:05:42 +0000 2020"
+        },
+        {
+            "tweet": "Why am I still getting #Facebook event reminders? #quarantinelife",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Avi-079",
+            "created_at": "Mon Apr 27 05:05:40 +0000 2020"
+        },
+        {
+            "tweet": "Using social media as like #facebook #Instagram #twitter #linkedin etc. You can increase your business sales and website traffic.\nYou can order me on Fiverr click-https://t.co/VI6YQBxH47 #advertising #DigitalMarketing #socialmediamarketing https://t.co/Hwr8XPaNOy",
+            "polarity": 0.5859,
+            "sentiment": "Very Positive",
+            "username": "Rupert Mamby",
+            "created_at": "Mon Apr 27 05:04:45 +0000 2020"
+        },
+        {
+            "tweet": "Facebook CEO Mark Zuckerberg has outlined a range of new video tools that Facebook is adding across its apps to meet demand during COVID-19. https://t.co/QaFgCvM0tm\n\n#facebook",
+            "polarity": -0.128,
+            "sentiment": "Negative",
+            "username": "Vaizle",
+            "created_at": "Mon Apr 27 05:04:39 +0000 2020"
+        },
+        {
+            "tweet": "I am sad (&amp; worried) that knee-jerk reactions of many #Americans, upon hearing something misaligned with what's being said in their echo chamber (their #Facebook page) is discredit the source, declare a global conspiracy, which apparently the entire scientific community is in on.",
+            "polarity": -0.8271,
+            "sentiment": "Very Negative",
+            "username": "churney",
+            "created_at": "Mon Apr 27 05:04:09 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/STHn4jv12n",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "DinfoMall.com™ - Best Online Deals!",
+            "created_at": "Mon Apr 27 05:03:00 +0000 2020"
+        },
+        {
+            "tweet": "@HSERMSPL\nWe are also available on:- #Website:-www.hse-consults.com,\n#Facebook:-@HseRiskManagement\n#Twitter:- @hsepvt,\n#Linkedin:-Bharat@hse-consultant.com,\n#You tube:-HSE Risk Management Services Pvt ltd.\n#safety_first #Emergency_Preparedness \n#processsafety\n#HSERMSPL https://t.co/B7vg9eFKQM",
+            "polarity": -0.2732,
+            "sentiment": "Negative",
+            "username": "HSE RISK MANAGEMENT PVT LTD.",
+            "created_at": "Mon Apr 27 05:02:22 +0000 2020"
+        },
+        {
+            "tweet": "Fulfill your duty with sincerity and offer your actions to God. Focus on your efforts, results will be granted by the Lord.\n\n#Facebook\n#पालघर \n#एकांतऔषधिहै \n#StayHomeStaySafe \n#घरमेंरहेंस्वस्थरहें \n#BePositive",
+            "polarity": 0.7184,
+            "sentiment": "Very Positive",
+            "username": "Lockdown 2.0",
+            "created_at": "Mon Apr 27 05:02:21 +0000 2020"
+        },
+        {
+            "tweet": "Everything you need to know about the partnership between @Facebook and Jio in 4 points.\nFull video here: https://t.co/qm3YpTLWVe\n\n#WithLoveFromJio #RelianceJio #MukeshAmbani \n#MarkZuckerberg #Facebook #JioDigitalLife https://t.co/29xR3s2pIU",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "नवीन सुभाष",
+            "created_at": "Mon Apr 27 05:01:46 +0000 2020"
+        },
+        {
+            "tweet": "Join me in some Warzone live https://t.co/8F8kGCVX0k                 \n@ShoutGamers\n\n@ShoutRTs\n  \n@HyperRT\n\n @TwitchRaids__ \n@ShoutRTs\n\n #CallofDuty #SupportSmallStreamers #SupportSmallerStreams #facebook #gamer #ps4share #Livestreaming #beststreamers #Warzone https://t.co/5SSNERiXo6",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "WeaselBass",
+            "created_at": "Mon Apr 27 05:00:09 +0000 2020"
+        },
+        {
+            "tweet": "Off Facebook Activity. No thanks. Uninstalling Facebook now. #Facebook",
+            "polarity": -0.3412,
+            "sentiment": "Negative",
+            "username": "Selena Josephine",
+            "created_at": "Mon Apr 27 05:00:07 +0000 2020"
+        },
+        {
+            "tweet": "Vlog 5 - Top 5 Tech news which you can't afford to miss| Facebook-Jio |Whatsapp |SayNamaste |Huawei\n#Tech #Updates #NEWS #Covid19 #Coronavirus #DevOps #India  #lockdown #Facebook #Jio  #SRE #DevSecOps #DevOpsSchool\nhttps://t.co/xhCkSFgEvZ",
+            "polarity": 0.3058,
+            "sentiment": "Positive",
+            "username": "sam",
+            "created_at": "Mon Apr 27 04:59:00 +0000 2020"
+        },
+        {
+            "tweet": "@MojKsa_EN\n\nMohit Singh living in Khalij 9, #Riyadh - KSA works as a private driver to a Arab family, posts highly inflammatory &amp; #Islamophobic content online on #Facebook He further mocks &amp; insults #Muslim #women &amp; muslim community\n@arabnews @MOISaudiArabia @ShuraCouncil_SA https://t.co/SW57Plak0v",
+            "polarity": -0.7003,
+            "sentiment": "Very Negative",
+            "username": "Shahul Sha",
+            "created_at": "Mon Apr 27 04:58:00 +0000 2020"
+        },
+        {
+            "tweet": "Want to know the quickest way to start generating a good consistent income?\n\nAffiliate Marketing: Make $100 to $300 using Facebook \n\nhttps://t.co/FcpKboCSrH via GlenAMurray #facebook #instagram #youtube #twitter #socialmedia #internetmarketing #makemoneyonline #makemoneyfast",
+            "polarity": 0.4939,
+            "sentiment": "Positive",
+            "username": "Glen Murray",
+            "created_at": "Mon Apr 27 04:57:32 +0000 2020"
+        },
+        {
+            "tweet": "Hackers sell 267 million Facebook profiles for RM2,350\nSecure your company, email us at marketing@linkdood.com\nhttps://t.co/biScmlh0Tn\n#cybersecurity #dataprotection #databreach #datacrime #infosec #encryption #security #tech #hacked #leaked #technology #privacy #facebook #hacker",
+            "polarity": -0.0516,
+            "sentiment": "Negative",
+            "username": "Jamie.",
+            "created_at": "Mon Apr 27 04:57:08 +0000 2020"
+        },
+        {
+            "tweet": "#Facebook takes on #Zoom with new video calling features https://t.co/1tDkAQ4J9L via @CNET",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "geekzoneme",
+            "created_at": "Mon Apr 27 04:56:13 +0000 2020"
+        },
+        {
+            "tweet": "Join me in some Warzone live https://t.co/8F8kGCVX0k                 \n@ShoutGamers\n\n@ShoutRTs\n  \n@HyperRT\n\n @TwitchRaids__ \n@ShoutRTs\n\n #CallofDuty #SupportSmallStreamers #SupportSmallerStreams #facebook #gamer #ps4share #Livestreaming #beststreamers #Warzone https://t.co/5SSNERiXo6",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "iWORK▲GAMING™",
+            "created_at": "Mon Apr 27 04:55:42 +0000 2020"
+        },
+        {
+            "tweet": "Join me in some Warzone live https://t.co/8F8kGCVX0k                 \n@ShoutGamers\n\n@ShoutRTs\n  \n@HyperRT\n\n @TwitchRaids__ \n@ShoutRTs\n\n #CallofDuty #SupportSmallStreamers #SupportSmallerStreams #facebook #gamer #ps4share #Livestreaming #beststreamers #Warzone https://t.co/5SSNERiXo6",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "ANPAUS | Streamer | Youtuber",
+            "created_at": "Mon Apr 27 04:55:11 +0000 2020"
+        },
+        {
+            "tweet": "Join me in some Warzone live https://t.co/8F8kGCVX0k                 \n@ShoutGamers\n\n@ShoutRTs\n  \n@HyperRT\n\n @TwitchRaids__ \n@ShoutRTs\n\n #CallofDuty #SupportSmallStreamers #SupportSmallerStreams #facebook #gamer #ps4share #Livestreaming #beststreamers #Warzone https://t.co/5SSNERiXo6",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "BC1005/PSN",
+            "created_at": "Mon Apr 27 04:55:02 +0000 2020"
+        },
+        {
+            "tweet": "my baby facebook update 🥰👇👇👇\n#ArtPakpoom #เบบี้ฮาท #Facebook #babyart https://t.co/hczLNOONSs",
+            "polarity": 0.4588,
+            "sentiment": "Positive",
+            "username": "Nong Art 😎😍",
+            "created_at": "Mon Apr 27 04:52:26 +0000 2020"
+        },
+        {
+            "tweet": "Clarification:Strained by 140 unlike by #Facebook Our-HASH TAG-SITE SLOGAN-ACTUAL TWEET-LINK structured #Tweets follow #message not #grammar",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "ModernWorld Cen",
+            "created_at": "Mon Apr 27 04:52:01 +0000 2020"
+        },
+        {
+            "tweet": "CLICK LINK 👇\nhttps://t.co/dFUpx28Y9e\n#Twitter #Facebook https://t.co/neNoh9EkzI",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "MCAMATRIXTS.com",
+            "created_at": "Mon Apr 27 04:51:18 +0000 2020"
+        },
+        {
+            "tweet": "my baby facebook update 🥰👇👇👇\n#ArtPakpoom #เบบี้ฮาท #Facebook #babyart https://t.co/hczLNOONSs",
+            "polarity": 0.4588,
+            "sentiment": "Positive",
+            "username": "Ae",
+            "created_at": "Mon Apr 27 04:50:38 +0000 2020"
+        },
+        {
+            "tweet": "Facebook's marketing is A-MAZE-ing.  Dennis Yu and @jkatzaman\n explain how the algo works and what we should do to make it work for us. #facebook https://t.co/pHAtYwws02 https://t.co/ESxm4jHrqU",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Manish Rohilla",
+            "created_at": "Mon Apr 27 04:50:02 +0000 2020"
+        },
+        {
+            "tweet": "I told mine, which is your favourite update 😉?\n\n#socialmedia #socialmediamarketing #SMM #socialmediaupdates #socialmedianews #instagram #facebook #LinkedIn #TikTok #socialmediamarketer #DigitalMarketing https://t.co/n9ufKW6voZ",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Digital Marketing Daily",
+            "created_at": "Mon Apr 27 04:49:18 +0000 2020"
+        },
+        {
+            "tweet": "Follow my Facebook guys we are 9 people away from being a verified gamer on Facebook gaming! Please help me achieve this! \n\n#facebook #facebook_page #facebookgaming #verified #support #gamer #gamercommunity #fifa20… https://t.co/SIB7VZzmn9",
+            "polarity": 0.8065,
+            "sentiment": "Very Positive",
+            "username": "Aaron (double A)",
+            "created_at": "Mon Apr 27 04:47:39 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/TcAoxoKoL8",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "DinfoMall.com™ - Best Online Deals!",
+            "created_at": "Mon Apr 27 04:47:00 +0000 2020"
+        },
+        {
+            "tweet": "Cartoon for April 2. #coronavirus #COVIDー19 #Trumpdemic #Facebook https://t.co/zzovbjgXm7",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "m v",
+            "created_at": "Mon Apr 27 04:46:41 +0000 2020"
+        },
+        {
+            "tweet": "Market your mobile games on Facebook course has been completed... \n\n#jeremiahkalaiselvan #freakingstudios #Facebook #COVID https://t.co/J7tqMTzOta",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Jeremiah Kalaiselvan",
+            "created_at": "Mon Apr 27 04:45:25 +0000 2020"
+        },
+        {
+            "tweet": "Join me in some Warzone live https://t.co/8F8kGCVX0k                 \n@ShoutGamers\n\n@ShoutRTs\n  \n@HyperRT\n\n @TwitchRaids__ \n@ShoutRTs\n\n #CallofDuty #SupportSmallStreamers #SupportSmallerStreams #facebook #gamer #ps4share #Livestreaming #beststreamers #Warzone https://t.co/jcIa4E8E1G",
+            "polarity": 0.296,
+            "sentiment": "Positive",
+            "username": "SocialLinks.co",
+            "created_at": "Mon Apr 27 04:45:00 +0000 2020"
+        },
+        {
+            "tweet": "Not only Uninstall Whatsapp, but uninstall all #Facebook owned app. All FB owned platform r #Fakenews heaven (originator), like #coroanvirus from #Wuhan",
+            "polarity": 0.8271,
+            "sentiment": "Very Positive",
+            "username": "Yogendra Yadav",
+            "created_at": "Mon Apr 27 04:42:55 +0000 2020"
+        },
+        {
+            "tweet": "As #deepfake penetrates the ad world including political ads, we seem to have already lost the game. This is just #CambridgeAnalytica on steroids - I'd say, waiting to happen, but I'm pretty sure it is already ongoing on #Facebook. https://t.co/H4hvg1YCoI",
+            "polarity": 0.765,
+            "sentiment": "Very Positive",
+            "username": "Topias Uotila",
+            "created_at": "Mon Apr 27 04:42:45 +0000 2020"
+        },
+        {
+            "tweet": "Follow my Facebook guys we are 9 people away from being a verified gamer on Facebook gaming! Please help me achieve this! \n\n#facebook #facebook_page #facebookgaming #verified #support #gamer #gamercommunity #fifa20… https://t.co/SIB7VZzmn9",
+            "polarity": 0.8065,
+            "sentiment": "Very Positive",
+            "username": "X3LGaming",
+            "created_at": "Mon Apr 27 04:41:57 +0000 2020"
+        },
+        {
+            "tweet": "For a #dislikeButton  on the #facebook timeline,join the movement with me 😛🤪🇫🇷🤞🏻",
+            "polarity": 0.0,
+            "sentiment": "Neutral",
+            "username": "Ali Dahoud",
+            "created_at": "Mon Apr 27 04:40:59 +0000 2020"
+        },
+        {
+            "tweet": "@MojKsa_EN\n\nMohit Singh living in Khalij 9, #Riyadh - KSA works as a private driver to a Arab family, posts highly inflammatory &amp; #Islamophobic content online on #Facebook He further mocks &amp; insults #Muslim #women &amp; muslim community\n@arabnews @MOISaudiArabia @ShuraCouncil_SA https://t.co/SW57Plak0v",
+            "polarity": -0.7003,
+            "sentiment": "Very Negative",
+            "username": "snake",
+            "created_at": "Mon Apr 27 04:40:40 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/KJcgkkwfuf",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "IndieGameGuys",
+            "created_at": "Mon Apr 27 04:39:08 +0000 2020"
+        },
+        {
+            "tweet": "My #Facebook friend list is growing more rapidly than #coronavirus patients in different regions. 😀 https://t.co/oCQC7Z24oU",
+            "polarity": 0.7506,
+            "sentiment": "Very Positive",
+            "username": "ایک عام کشمیری",
+            "created_at": "Mon Apr 27 04:39:06 +0000 2020"
+        },
+        {
+            "tweet": "Find great deals on Sale Electronics at Kohl's today!  #tech #technology #facebook #stocks #apple #company #business #gamedev #indiedev https://t.co/KJcgkkwfuf",
+            "polarity": 0.6588,
+            "sentiment": "Very Positive",
+            "username": "INGARE 🎮",
+            "created_at": "Mon Apr 27 04:38:48 +0000 2020"
+        },
+        {
+            "tweet": "Jitvu Chhe - Must Watch on @GTPL_Hathway Channel No 282 with the following time today! \n\n#JitvuChhe #GujaratiSong #GTPL #VipulNarigara #Cricket #Facebook https://t.co/2OTV1298vt",
+            "polarity": -0.3595,
+            "sentiment": "Negative",
+            "username": "Vipul Narigara FansClub - Surat",
+            "created_at": "Mon Apr 27 04:38:26 +0000 2020"
+        },
+        {
+            "tweet": "my baby facebook update 🥰👇👇👇\n#ArtPakpoom #เบบี้ฮาท #Facebook #babyart https://t.co/hczLNOONSs",
+            "polarity": 0.4588,
+            "sentiment": "Positive",
+            "username": "ชิปเปอร์ จีชาน Golcha",
+            "created_at": "Mon Apr 27 04:38:03 +0000 2020"
+        },
+        {
+            "tweet": "So who’s news feed is still broken on @Facebook #facebookdown @UghFacebookDown #Facebook",
+            "polarity": -0.4767,
+            "sentiment": "Negative",
+            "username": "Sammy",
+            "created_at": "Mon Apr 27 04:37:33 +0000 2020"
+        }
+    ]
 }

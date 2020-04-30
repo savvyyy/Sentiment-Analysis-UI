@@ -2,21 +2,5 @@
     {
         "tweet": "RT @vegannutrition1: How come we had Mad Cow disease, Swine Flu, Avian Influenza, Ebola Virus, SARS, &amp; COVID 19 but we never had Watermelon…",
         "intent": "['faq.biz_simpler', 0.36215016]"
-    },
-    {
-        "tweet": "RT @PastorJohnHagee: The disease that is destroying your peace can be conquered by Jesus Christ, the Prince of Peace.\n\n#peace #morethanacon…",
-        "intent": "['commonQ.query', 0.62026435]"
-    },
-    {
-        "tweet": "RT @PastorJohnHagee: The disease that is destroying your peace can be conquered by Jesus Christ, the Prince of Peace.\n\n#peace #morethanacon…",
-        "intent": "['commonQ.query', 0.62026435]"
-    },
-    {
-        "tweet": "RT @PastorJohnHagee: The disease that is destroying your peace can be conquered by Jesus Christ, the Prince of Peace.\n\n#peace #morethanacon…",
-        "intent": "['commonQ.query', 0.62026435]"
-    },
-    {
-        "tweet": "RT @PastorJohnHagee: The disease that is destroying your peace can be conquered by Jesus Christ, the Prince of Peace.\n\n#peace #morethanacon…",
-        "intent": "['commonQ.query', 0.62026435]"
     }
 ]

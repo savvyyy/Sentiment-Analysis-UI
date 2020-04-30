@@ -28,12 +28,12 @@ export default function TweetList(props) {
           </FixedSizeList> */}
           <List>
             {
-              props.data.map((el) => {
-                return <AspectTweet key={el.id}
-                                    text={el.tweetclean}
-                                    polarity={el.Polarity}
-                                    sentiment={el.Sentiment}
-                                    aspect={el.Aspects} 
+              props.data.map((aspct) => {
+                return <AspectTweet key={aspct.id}
+                                    text={aspct.tweet || aspct.sentence}
+                                    polarity={aspct.Polarity || aspct.polarity}
+                                    sentiment={aspct.Sentiment || aspct.sentiment}
+                                    aspect={aspct.Aspects || aspct.aspect} 
                         /> 
               })
             }

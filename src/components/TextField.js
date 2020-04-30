@@ -5,7 +5,8 @@ import InputBase from '@material-ui/core/InputBase';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import BusinessIcon from '@material-ui/icons/Business';
+import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
@@ -65,12 +66,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TextField(props) {
-  let searchText = '';
+  console.log('TextField', props)
+  let selectOptions = '';
   const classes = useStyles();
-  const [source, setSource] = useState('');
+  const [source, setSource] = useState('twitter');
+  const [intentSource, setIntentSource] = useState('restraunt')
   const [text, setText] = useState("")
   const handleChange = (event) => {
     setSource(event.target.value);
+  };
+  const handleIntentChange = (event) => {
+    setIntentSource(event.target.value);
   };
   const handleChangeSearch = (event) => {
     event.preventDefault;
@@ -80,7 +86,8 @@ export default function TextField(props) {
     setText(event.target.value);
   };
   const searchTweet = _ => {
-    props.textSearch({text, source})
+    let sourceData = props.tab == 2? intentSource: source
+    props.textSearch({text, source: sourceData, tab: props.tab})
   }
 
   const preventSubmit = (event) => {
@@ -89,7 +96,41 @@ export default function TextField(props) {
       event.preventDefault();
     }
   }
-// console.log('prrrrrr', props)
+  
+  switch (props.tab) {
+    case 1:
+      selectOptions = 
+        <Select
+          labelId="demo-customized-select-label"
+          id="demo-customized-select"
+          value={source}
+          onChange={handleChange}
+          input={<BootstrapInput />}
+        >
+          <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem>
+          <MenuItem value='restraunt'><BusinessIcon color="primary"/></MenuItem>
+          <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
+        </Select> 
+      break;
+    case 2:
+      selectOptions = 
+        <Select
+          labelId="demo-customized-select-label"
+          id="demo-customized-select"
+          value={intentSource}
+          onChange={handleIntentChange}
+          input={<BootstrapInput />}
+        >
+          <MenuItem value='restraunt'><BusinessIcon color="primary"/></MenuItem>
+          <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
+        </Select> 
+      break;
+    default:
+      selectOptions = 
+        <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem> 
+      break;
+  }
+  
   return (
     <Paper component="form" className={classes.root}>
       
@@ -105,16 +146,8 @@ export default function TextField(props) {
       <IconButton type="button" className={classes.iconButton} aria-label="search" onClick={searchTweet}>
         <SearchIcon />
       </IconButton>
-      {/* <Divider className={classes.divider} orientation="vertical" /> */}
-      {/* <Select
-          labelId="demo-customized-select-label"
-          id="demo-customized-select"
-          value={source}
-          onChange={handleChange}
-          input={<BootstrapInput />}
-        >
-        <MenuItem value={0}><TwitterIcon color="primary"/></MenuItem>
-      </Select> */}
+      <Divider className={classes.divider} orientation="vertical" />
+      { selectOptions }
     </Paper>
   );
 }

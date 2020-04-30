@@ -65,6 +65,7 @@ export default function FullWidthTabs(props) {
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    props.searchForSource(newValue)
     switch (newValue) {
       case 1:
         getAspectAnalysis().then( (response) => {
@@ -113,22 +114,22 @@ export default function FullWidthTabs(props) {
 
   const getSentimentAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+data.text)
+    return axios.get('http://127.0.0.1:8080/data/sentiment.json?hashtag='+props.data.text+'&source='+props.data.source)
   }
 
   const getAspectAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/absa?hashtag='+data.text)
+    return axios.get('http://127.0.0.1:8080/data/aspect.json?hashtag='+props.data.text+'&source='+props.data.source)
   }
 
   const getIntentAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/intent?hashtag='+data.text)
+    return axios.get('http://127.0.0.1:8080/data/intent.json?hashtag='+props.data.text+'&source='+props.data.source)
   } 
 
   const getGraphData = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/graph?hashtag='+data.text)
+    return axios.get('http://127.0.0.1:8080/data/graph.json?hashtag='+props.data.text+'&source='+props.data.source)
   } 
 
   useEffect(() => {
@@ -182,7 +183,7 @@ export default function FullWidthTabs(props) {
           break;
       }
     }
-  }, [props.data.text]);
+  }, [props.data.text, props.data.source]);
 
   return (
     <div>

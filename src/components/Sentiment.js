@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CustomEmoji from './CustomEmoji'
 import Loader from './LoaderComponent'
+import SentimentTweets from './FullScreenDialogue'
 
 const useStyles = makeStyles({
   root: {
@@ -43,8 +44,9 @@ export default function Sentiment(props) {
             {props.data.sentiment}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            <b>Score: </b>{props.data.average}
+            <b>Score: </b>{props.data.score}
           </Typography>
+          <SentimentTweets tweets={props.data.tweets} />
         </CardContent>
       </Card>
     );
