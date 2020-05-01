@@ -7,7 +7,7 @@ const AppRouter = () => {
   const setSourceData = (tab) => {
     let sourceData;
     if(tab == 2){
-      sourceData = 'restraunt'
+      sourceData = 'restaurant'
     }else{
       sourceData = 'twitter'
     } 

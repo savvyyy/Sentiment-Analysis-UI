@@ -42,7 +42,7 @@ const Tweet = (props) => {
               <b>Sentiment: </b>{props.sentiment}
               </Typography>
               <span className={classes.user}>username: {props.username}</span>
-              <span className={classes.created_at}>created_At: {props.created_At}</span>
+              <span className={classes.created_at}>@{props.created_At}</span>
             </React.Fragment>
           } />
   </ListItem>)

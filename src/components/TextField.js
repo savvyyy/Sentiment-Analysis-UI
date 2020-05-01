@@ -70,7 +70,7 @@ export default function TextField(props) {
   let selectOptions = '';
   const classes = useStyles();
   const [source, setSource] = useState('twitter');
-  const [intentSource, setIntentSource] = useState('restraunt')
+  const [intentSource, setIntentSource] = useState('restaurant')
   const [text, setText] = useState("")
   const handleChange = (event) => {
     setSource(event.target.value);
@@ -108,7 +108,7 @@ export default function TextField(props) {
           input={<BootstrapInput />}
         >
           <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem>
-          <MenuItem value='restraunt'><RestaurantIcon color="primary"/></MenuItem>
+          <MenuItem value='restaurant'><RestaurantIcon color="primary"/></MenuItem>
           <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
         </Select> 
       break;
@@ -121,7 +121,7 @@ export default function TextField(props) {
           onChange={handleIntentChange}
           input={<BootstrapInput />}
         >
-          <MenuItem value='restraunt'><RestaurantIcon color="primary"/></MenuItem>
+          <MenuItem value='restaurant'><RestaurantIcon color="primary"/></MenuItem>
           <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
         </Select> 
       break;

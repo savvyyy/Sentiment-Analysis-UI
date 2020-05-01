@@ -135,7 +135,7 @@ export default (props) => {
           <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
           {
             vsData.length > 0 &&
-            <Line type="monotone" dataKey="source2" stroke="#82ca9d" />
+            <Line type="monotone" dataKey="source2" stroke="#d88487" />
           }
         </LineChart>
       </React.Fragment>

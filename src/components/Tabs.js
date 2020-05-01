@@ -124,12 +124,12 @@ export default function FullWidthTabs(props) {
 
   const getIntentAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:8080/data/intent.json?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:8080/intent?hashtag='+props.data.text+'&source='+props.data.source)
   } 
 
   const getGraphData = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/graph?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:5000/graph?hashtag='+props.data.text)
   } 
 
   useEffect(() => {
@@ -197,7 +197,7 @@ export default function FullWidthTabs(props) {
         >
           <Tab label="Sentiment Analysis" {...a11yProps(0)} />
           <Tab label="Aspect Analysis" {...a11yProps(1)} />
-          <Tab label="Intent Analysis" {...a11yProps(2)} />
+          <Tab label="Intent Analysis" {...a11yProps(2)} disabled />
           <Tab label="Graph" {...a11yProps(3)} />
         </Tabs>
       </AppBar>
@@ -212,7 +212,7 @@ export default function FullWidthTabs(props) {
         <TabPanel value={value} index={1} dir={theme.direction}>
           <AspectTweetList data={aspectTweets} loading={loading}/>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
+        <TabPanel value={value} index={2} dir={theme.direction}> 
           <IntentTweetList data={intentTweets} loading={loading}/>
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
