@@ -15,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
   inline: {
     display: 'inline',
   },
-  aspect:{
+  user:{
+    overflowWrap: "break-word"
+  },
+  created_at:{
     overflowWrap: "break-word"
   }
 }));
@@ -38,7 +41,8 @@ const Tweet = (props) => {
               >
               <b>Sentiment: </b>{props.sentiment}
               </Typography>
-              <span className={classes.aspect}>username: {props.username}</span>
+              <span className={classes.user}>username: {props.username}</span>
+              <span className={classes.created_at}>created_At: {props.created_At}</span>
             </React.Fragment>
           } />
   </ListItem>)

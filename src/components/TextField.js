@@ -5,7 +5,7 @@ import InputBase from '@material-ui/core/InputBase';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
-import BusinessIcon from '@material-ui/icons/Business';
+import RestaurantIcon from '@material-ui/icons/Restaurant';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -108,7 +108,7 @@ export default function TextField(props) {
           input={<BootstrapInput />}
         >
           <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem>
-          <MenuItem value='restraunt'><BusinessIcon color="primary"/></MenuItem>
+          <MenuItem value='restraunt'><RestaurantIcon color="primary"/></MenuItem>
           <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
         </Select> 
       break;
@@ -121,7 +121,7 @@ export default function TextField(props) {
           onChange={handleIntentChange}
           input={<BootstrapInput />}
         >
-          <MenuItem value='restraunt'><BusinessIcon color="primary"/></MenuItem>
+          <MenuItem value='restraunt'><RestaurantIcon color="primary"/></MenuItem>
           <MenuItem value='laptop'><SmartphoneIcon color="primary"/></MenuItem>          
         </Select> 
       break;

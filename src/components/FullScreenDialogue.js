@@ -61,6 +61,7 @@ export default function FullScreenDialog(props) {
                                     polarity={tweet.polarity}
                                     sentiment={tweet.sentiment}
                                     username={tweet.username} 
+                                    created_At={tweet.created_at}
                         /> 
               })
           }

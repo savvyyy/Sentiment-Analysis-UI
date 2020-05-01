@@ -114,12 +114,12 @@ export default function FullWidthTabs(props) {
 
   const getSentimentAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:8080/data/sentiment.json?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+props.data.text+'&source='+props.data.source)
   }
 
   const getAspectAnalysis = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:8080/data/aspect.json?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:5000/aspect/domain?text='+props.data.text+'&source='+props.data.source)
   }
 
   const getIntentAnalysis = _ => {
@@ -129,7 +129,7 @@ export default function FullWidthTabs(props) {
 
   const getGraphData = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:8080/data/graph.json?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:5000/graph?hashtag='+props.data.text+'&source='+props.data.source)
   } 
 
   useEffect(() => {
@@ -145,7 +145,6 @@ export default function FullWidthTabs(props) {
       switch (value) {
         case 1:
           getAspectAnalysis().then( (response) => {
-            console.log('response', response)
             let {data} = response
             setAspectTweet(data) 
             setLoading(false)

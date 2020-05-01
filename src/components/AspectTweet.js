@@ -30,6 +30,7 @@ const Tweet = (props) => {
     </ListItemAvatar>
     <ListItemText primary={props.text} secondary={
             <React.Fragment>
+              <span className={classes.aspect}>Aspect: {props.aspect.join(',')}</span>
               <Typography
                 component="span"
                 variant="body2"
@@ -38,7 +39,6 @@ const Tweet = (props) => {
               >
               <b>Sentiment: </b>{props.sentiment}
               </Typography>
-              <span className={classes.aspect}>Aspect: {props.aspect.join(',')}</span>
             </React.Fragment>
           } />
   </ListItem>)

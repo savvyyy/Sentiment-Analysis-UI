@@ -44,7 +44,7 @@ export default function Sentiment(props) {
             {props.data.sentiment}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            <b>Score: </b>{props.data.score}
+            <b>Score: </b>{props.data.average}
           </Typography>
           <SentimentTweets tweets={props.data.tweets} />
         </CardContent>
