@@ -4,7 +4,6 @@ import List from '@material-ui/core/List';
 import AspectTweet from './AspectTweet'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import { FixedSizeList } from 'react-window';
 import Loader from './LoaderComponent'
 
 const useStyles = makeStyles((theme) => ({
@@ -13,6 +12,15 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
+  listView:{
+    width: '100%',
+    position: 'relative',
+    overflow: 'auto',
+    maxHeight: 300,
+  },
+  textAlign: {
+    textAlign: "center"
+  }
 }));
 
 export default function TweetList(props) {
@@ -21,23 +29,27 @@ export default function TweetList(props) {
     return <Loader />
   }
   else{
+    let content = ''
+    if(typeof props.data[0] == 'undefined' ){
+      content = <div className={classes.textAlign}><p>No Result Found!!</p></div>
+    }else{
+      content = <List className={classes.listView}>
+          {
+            props.data.map((aspct) => {
+              return <AspectTweet key={aspct.id}
+                                  text={aspct.tweet || aspct.sentence}
+                                  polarity={aspct.Polarity || aspct.polarity}
+                                  sentiment={aspct.Sentiment || aspct.sentiment}
+                                  aspect={aspct.Aspects || aspct.aspect} 
+                      /> 
+            })
+          }
+        </List>
+    }
     return (
       <Card >
         <CardContent>
-          {/* <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
-          </FixedSizeList> */}
-          <List>
-            {
-              props.data.map((aspct) => {
-                return <AspectTweet key={aspct.id}
-                                    text={aspct.tweet || aspct.sentence}
-                                    polarity={aspct.Polarity || aspct.polarity}
-                                    sentiment={aspct.Sentiment || aspct.sentiment}
-                                    aspect={aspct.Aspects || aspct.aspect} 
-                        /> 
-              })
-            }
-          </List>
+          {content}
         </CardContent>
       </Card>
     );

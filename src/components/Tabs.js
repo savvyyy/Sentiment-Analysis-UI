@@ -52,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function FullWidthTabs(props) {
-  
   const { data } = props;
   const classes = useStyles();
   const theme = useTheme();
@@ -62,8 +61,9 @@ export default function FullWidthTabs(props) {
   const [intentTweets, setIntentTweet] = useState([]);
   const [graphData, setGraphData] = useState([]);
   const [loading, setLoading] = useState(true)
-  
+  const CancelToken = axios.CancelToken;
   const handleChange = (event, newValue) => {
+    setLoading(true)
     setValue(newValue);
     props.searchForSource(newValue)
     switch (newValue) {
@@ -74,7 +74,8 @@ export default function FullWidthTabs(props) {
           setAspectTweet(data) 
           setLoading(false)
         }).catch((error) => {
-          alert(error)
+          setLoading(false)
+          console.log('Aspect request', error)
         })
         
         break;
@@ -84,7 +85,8 @@ export default function FullWidthTabs(props) {
           setIntentTweet(data)
           setLoading(false)
         }).catch((error) => {
-          alert(error)
+          setLoading(false)
+          console.log('Intent request', error)
         })
         break;
       case 3:
@@ -93,7 +95,8 @@ export default function FullWidthTabs(props) {
             setGraphData(data)
             setLoading(false)
           }).catch((error) => {
-            alert(error)
+            setLoading(false)
+            console.log('Graph request', error)
           })
           break;
       default:
@@ -102,7 +105,8 @@ export default function FullWidthTabs(props) {
           setSentiment(data)
           setLoading(false)
         }).catch((error) => {
-          alert(error)
+          setLoading(false)
+          console.log('Sentiment request', error)
         })
         break;
     }
@@ -112,25 +116,29 @@ export default function FullWidthTabs(props) {
     setValue(index);
   };
 
-  const getSentimentAnalysis = _ => {
+  const initiateNewRequest = _ => {
     setLoading(true)
-    return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+props.data.text+'&source='+props.data.source)
+  }
+
+  const getSentimentAnalysis = _ => {
+    initiateNewRequest()
+    return axios.get('http://localhost:8080/data/sentiment.json?hashtag='+props.data.text)
   }
 
   const getAspectAnalysis = _ => {
-    setLoading(true)
-    return axios.get('http://127.0.0.1:5000/aspect/domain?text='+props.data.text+'&source='+props.data.source)
+    initiateNewRequest()
+    return axios.get('http://localhost:8080/data/aspect.json?hashtag='+props.data.text+'&source='+props.data.source)
   }
 
   const getIntentAnalysis = _ => {
-    setLoading(true)
-    return axios.get('http://127.0.0.1:8080/intent?hashtag='+props.data.text+'&source='+props.data.source)
+    initiateNewRequest()
+    return axios.get('http://localhost:8080/data/intent.json?hashtag='+props.data.text+'&source='+props.data.source)
   } 
 
   const getGraphData = _ => {
-    setLoading(true)
-    return axios.get('http://127.0.0.1:5000/graph?hashtag='+props.data.text)
-  } 
+    initiateNewRequest()
+    return axios.get('http://localhost:8080/data/graph.json?hashtag='+props.data.text)
+  }
 
   useEffect(() => {
     if(props.data.text == ''){
@@ -139,7 +147,8 @@ export default function FullWidthTabs(props) {
         setSentiment(data)
         setLoading(false)
       }).catch((error) => {
-        alert(error)
+        setLoading(false)
+        console.log('Sentiment request', error)
       })
     }else{
       switch (value) {
@@ -149,7 +158,8 @@ export default function FullWidthTabs(props) {
             setAspectTweet(data) 
             setLoading(false)
           }).catch((error) => {
-            alert(error)
+            setLoading(false)
+            console.log('Aspect request', error)
           })
           
           break;
@@ -159,7 +169,8 @@ export default function FullWidthTabs(props) {
             setIntentTweet(data)
             setLoading(false)
           }).catch((error) => {
-            alert(error)
+            setLoading(false)
+            console.log('Intent request', error)
           })
           break;
         case 3:
@@ -168,7 +179,8 @@ export default function FullWidthTabs(props) {
               setGraphData(data)
               setLoading(false)
             }).catch((error) => {
-              alert(error)
+              setLoading(false)
+              console.log('Graph request', error)
             })
             break;
         default:
@@ -177,7 +189,8 @@ export default function FullWidthTabs(props) {
             setSentiment(data)
             setLoading(false)
           }).catch((error) => {
-            alert(error)
+            setLoading(false)
+            console.log('Sentiment request', error)
           })
           break;
       }

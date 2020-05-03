@@ -34,19 +34,28 @@ export default function Sentiment(props) {
     return <Loader />
   }
   else{
+    let content = ''
+    if(typeof props.data.tweets == 'undefined' ){
+      content = <div><p>No Result Found!!</p></div>
+    }else{
+      content = <div>
+        <Typography className={classes.title} color="textSecondary" gutterBottom>
+          <CustomEmoji polarity={props.data.sentiment} />
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          {props.data.sentiment}
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          <b>Score: </b>{props.data.average}
+        </Typography>
+        <SentimentTweets tweets={props.data.tweets} />
+        </div>
+    }
+
     return (
       <Card className={classes.textAlign}>
         <CardContent>
-          <Typography className={classes.title} color="textSecondary" gutterBottom>
-            <CustomEmoji polarity={props.data.sentiment} />
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            {props.data.sentiment}
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            <b>Score: </b>{props.data.average}
-          </Typography>
-          <SentimentTweets tweets={props.data.tweets} />
+          {content}
         </CardContent>
       </Card>
     );

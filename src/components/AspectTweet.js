@@ -5,6 +5,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import CustomEmoji from './CustomEmoji';
 import Typography from '@material-ui/core/Typography';
+import { cyan } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'inline',
   },
   aspect:{
-    overflowWrap: "break-word"
+    overflowWrap: "break-word",
+    color: "cyan"
   }
 }));
 

@@ -94,6 +94,7 @@ export default function TextField(props) {
     if (event.keyCode === 13) {
       // Cancel the default action, if needed
       event.preventDefault();
+      searchTweet()
     }
   }
   
