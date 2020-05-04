@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Brush
 } from 'recharts';
 import TextField from '../components/TextField';
 import moment from 'moment';
@@ -130,12 +130,13 @@ export default (props) => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
+          <Brush dataKey="date" height={30} stroke="#8884d8" />
           <YAxis />
           <Tooltip content={<CustomTooltip/>}/>
-          <Line type="monotone" dataKey="source1" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="linear" dataKey="source1" stroke="#8884d8" activeDot={{ r: 4 }} />
           {
             vsData.length > 0 &&
-            <Line type="monotone" dataKey="source2" stroke="#d88487" />
+            <Line type="linear" dataKey="source2" stroke="#d88487" />
           }
         </LineChart>
       </React.Fragment>
