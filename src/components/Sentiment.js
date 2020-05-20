@@ -35,10 +35,11 @@ export default function Sentiment(props) {
   }
   else{
     let content = ''
-    if(typeof props.data.tweets == 'undefined' ){
+    if(typeof props.data.text == 'undefined' ){
       content = <div><p>No Result Found!!</p></div>
     }else{
-      content = <div>
+      if(props.data.source == 'twitter') {
+        content = <div>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           <CustomEmoji polarity={props.data.sentiment} />
         </Typography>
@@ -48,8 +49,22 @@ export default function Sentiment(props) {
         <Typography className={classes.pos} color="textSecondary">
           <b>Score: </b>{props.data.average}
         </Typography>
-        <SentimentTweets tweets={props.data.tweets} />
+        <SentimentTweets tweets={props.data.text} />
         </div>
+      }
+      else if(props.data.source == 'manual') {
+        content = <div>
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
+            <CustomEmoji polarity={props.data.text[0].sentiment} />
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            {props.data.text[0].sentiment}
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            <b>Score :</b>{props.data.text[0].polarity}
+          </Typography>
+        </div>
+      }
     }
 
     return (

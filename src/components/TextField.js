@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import RestaurantIcon from '@material-ui/icons/Restaurant';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
+import RateReviewIcon from '@material-ui/icons/RateReview';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
@@ -70,11 +71,17 @@ export default function TextField(props) {
   let selectOptions = '';
   const classes = useStyles();
   const [source, setSource] = useState('twitter');
+  const [sentimentSource, setSentimentSource] = useState('twitter');
   const [intentSource, setIntentSource] = useState('restaurant')
   const [text, setText] = useState("")
   const handleChange = (event) => {
     setSource(event.target.value);
   };
+
+  const handleSentimentChange = (event) => {
+    setSentimentSource(event.target.value);
+  }
+
   const handleIntentChange = (event) => {
     setIntentSource(event.target.value);
   };
@@ -86,7 +93,15 @@ export default function TextField(props) {
     setText(event.target.value);
   };
   const searchTweet = _ => {
-    let sourceData = props.tab == 2? intentSource: source
+    // let sourceData = props.tab == 2? intentSource: source
+    let sourceData = '';
+    if(props.tab == 0) {
+      sourceData = sentimentSource
+    } else if(props.tab == 1) {
+      sourceData = source
+    } else {
+      sourceData = intentSource
+    }
     props.textSearch({text, source: sourceData, tab: props.tab})
   }
 
@@ -128,7 +143,16 @@ export default function TextField(props) {
       break;
     default:
       selectOptions = 
-        <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem> 
+      <Select
+          labelId="demo-customized-select-label"
+          id="demo-customized-select"
+          value={sentimentSource}
+          onChange={handleSentimentChange}
+          input={<BootstrapInput />}
+        >
+          <MenuItem value='twitter'><TwitterIcon color="primary"/></MenuItem>
+          <MenuItem value='manual'><RateReviewIcon color="primary"/></MenuItem>         
+        </Select> 
       break;
   }
   

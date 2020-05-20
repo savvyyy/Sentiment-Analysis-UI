@@ -122,7 +122,7 @@ export default function FullWidthTabs(props) {
 
   const getSentimentAnalysis = _ => {
     initiateNewRequest()
-    return axios.get('http://127.0.0.1:5000/getSentiment?hashtag='+props.data.text+'&source='+props.data.source)
+    return axios.get('http://127.0.0.1:5000/getSentiment?text='+props.data.text+'&source='+props.data.source)
   }
 
   const getAspectAnalysis = _ => {
